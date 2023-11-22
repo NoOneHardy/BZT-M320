@@ -9,6 +9,12 @@ public class Kind
     private Mutter refMutter = null;
     // Normale Wertvariable
     private int geburtsJahr= 0;
+    public int getGeburtsJahr() {
+        return geburtsJahr;
+    }
+    public void setGeburtsJahr(int geburtsJahr) {
+        this.geburtsJahr = geburtsJahr;
+    }
     /**
     * Es findet eine Parameterübergabe statt.
     * Die Klasse Kind macht einen Verweis zur Mutter.
