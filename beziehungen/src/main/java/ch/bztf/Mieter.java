@@ -17,7 +17,7 @@ public class Mieter {
     }
 
     public Mieter(String name) {
-        this.name = name;
+        setName(name);
     }
 
     public void wohnungMieten(Wohnung wohnung) {
@@ -25,7 +25,7 @@ public class Mieter {
             wohnung.mieten(this);
             wohnungen++;
         } else {
-            System.out.println("Diese Wohnung wird bereits von " + wohnung);
+            System.out.println("Diese Wohnung wird bereits von " + wohnung.getMieter().name + " gemietet.");
         }
     }
 
@@ -34,7 +34,7 @@ public class Mieter {
             wohnung.ausziehen();
             wohnungen--;
         } else {
-            System.out.println("Dises Wohnung wird nicht von " + getName() + " gemietet.");
+            System.out.println("Diese Wohnung wird nicht von " + getName() + " gemietet.");
         }
     }
 }

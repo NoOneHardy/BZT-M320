@@ -6,9 +6,10 @@ public class Moebel {
     private Zimmer zimmer = null;
 
     public Moebel(String typ, String material, Zimmer zimmer) {
-        this.typ = typ;
-        this.material = material;
-        this.zimmer = zimmer;
+        setTyp(typ);
+        setMaterial(material);
+        setZimmer(zimmer);
+        zimmer.addMoebel(this);
     }
 
     public String getTyp() {
