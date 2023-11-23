@@ -90,11 +90,15 @@ public class Main {
         } else {
             System.out.println("      " + zimmer.getTyp());
         }
-        for (Moebel moebel : zimmer.getMoebelList()) {
-            System.out.println("        Moebel: " + zimmer.getMoebelList().indexOf(moebel));
-            System.out.println("        - Typ: " + moebel.getTyp());
-            System.out.println("        - Material: " + moebel.getMaterial());
-            System.out.println("        - Steht in: " + moebel.getZimmer().getTyp());
+        int moebelCount = 0;
+        for (Moebel moebel : moebelList) {
+            if (moebel.getZimmer() == zimmer) {
+                System.out.println("        Moebel: " + moebelCount);
+                System.out.println("        - Typ: " + moebel.getTyp());
+                System.out.println("        - Material: " + moebel.getMaterial());
+                System.out.println("        - Steht in: " + moebel.getZimmer().getTyp());
+                moebelCount++;
+            }
         }
     }
 }

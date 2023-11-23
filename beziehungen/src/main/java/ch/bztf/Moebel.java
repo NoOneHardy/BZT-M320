@@ -9,7 +9,6 @@ public class Moebel {
         setTyp(typ);
         setMaterial(material);
         setZimmer(zimmer);
-        zimmer.addMoebel(this);
     }
 
     public String getTyp() {

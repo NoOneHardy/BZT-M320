@@ -49,11 +49,9 @@ public class Wohnung {
         return mieter;
     }
 
-    public Mieter mieterWechseln(Mieter mieterNeu) {
-        Mieter mieterAlt = mieter;
+    public void mieterWechseln(Mieter mieterNeu) {
         ausziehen();
         mieten(mieterNeu);
-        return mieterAlt;
     }
 
     public Zimmer getZimmer(int i) {
@@ -62,7 +60,7 @@ public class Wohnung {
 
     public void setZimmerTyp(String typ, int anzahlZimmer) {
         if (anzahlZimmer > zimmerList.size()) {
-            System.out.println("Die Wohnung " + getAdresse() + "hat nicht so viele Zimmer");
+            System.out.println("Die Wohnung " + getAdresse() + " hat nicht so viele Zimmer");
             return;
         }
 
