@@ -65,4 +65,13 @@ public class Zimmer {
         setLichtAn(!isLichtAn());
         return isLichtAn();
     }
+
+    public ArrayList<Moebel> leeren() {
+        ArrayList<Moebel> alteMoebel = new ArrayList<>();
+        for (Moebel moebel : moebelListe) {
+            alteMoebel.add(moebel);
+            moebelEntfernen(moebel);
+        }
+        return alteMoebel;
+    }
 }
