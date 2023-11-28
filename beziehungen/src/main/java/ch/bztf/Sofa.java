@@ -5,8 +5,7 @@ public class Sofa extends Moebel{
     private boolean ecksofa;
 
     public Sofa() {
-        super();
-        setTyp("Sofa");
+        super("Sofa");
     }
 
     public int getPlaetze() {

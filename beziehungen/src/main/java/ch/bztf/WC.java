@@ -5,8 +5,7 @@ public class WC extends Moebel {
     private boolean benutzt;
 
     public WC() {
-        super();
-        setTyp("WC");
+        super("WC");
     }
 
     public boolean isElektrisch() {

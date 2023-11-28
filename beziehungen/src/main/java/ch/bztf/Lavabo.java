@@ -5,8 +5,7 @@ public class Lavabo extends Moebel {
     private String hahnTyp;
 
     public Lavabo() {
-        super();
-        setTyp("Lavabo");
+        super("Lavabo");
     }
 
     public String getForm() {

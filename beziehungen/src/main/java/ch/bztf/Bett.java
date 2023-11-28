@@ -5,8 +5,7 @@ public class Bett extends Moebel {
     private boolean gemacht;
 
     public Bett() {
-        super();
-        setTyp("Bett");
+        super("Bett");
     }
 
     public int getPlaetze() {

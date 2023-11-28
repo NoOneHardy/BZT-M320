@@ -50,7 +50,7 @@ public class Schlafzimmer extends Zimmer {
             if (bett.getZimmer() == null) {
                 if (betten.size() < maxBetten) {
                     betten.add(bett);
-                    bett.einrichten(this);
+                    moebelHinzufuegen(bett);
                 } else {
                     System.out.println("Dieses Schlafzimmer hat schon die maximale Anzahl Betten. (" + maxBetten + ")");
                 }

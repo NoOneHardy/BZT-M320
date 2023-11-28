@@ -1,7 +1,7 @@
 package ch.bztf;
 
 public class Moebel {
-    private String typ;
+    private String typ = "Nicht definiert";
     private String material;
     private double wert;
     private String hersteller;
@@ -9,7 +9,8 @@ public class Moebel {
     private double laenge;
     private double breite;
 
-    public Moebel() {
+    public Moebel(String typ) {
+        setTyp(typ);
     }
 
     public String getTyp() {

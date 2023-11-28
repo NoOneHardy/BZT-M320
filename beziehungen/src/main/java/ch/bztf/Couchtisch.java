@@ -5,8 +5,7 @@ public class Couchtisch extends Moebel{
     private boolean dekoriert;
 
     public Couchtisch() {
-        super();
-        setTyp("Couchtisch");
+        super("Couchtisch");
     }
 
     public String getForm() {

@@ -5,8 +5,7 @@ public class Dusche extends Moebel {
     private boolean transparent;
 
     public Dusche() {
-        super();
-        setTyp("Dusche");
+        super("Dusche");
     }
 
     public String getTuerTyp() {

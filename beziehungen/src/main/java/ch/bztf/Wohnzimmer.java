@@ -81,7 +81,7 @@ public class Wohnzimmer extends Zimmer {
             if (sofa.getZimmer() == null) {
                 if (sofas.size() < maxSofas) {
                     sofas.add(sofa);
-                    sofa.einrichten(this);
+                    moebelHinzufuegen(sofa);
                 } else {
                     System.out.println("Dieses Wohnzimmer hat schon die maximale Anzahl Sofas. (" + maxSofas + ")");
                 }
@@ -97,7 +97,7 @@ public class Wohnzimmer extends Zimmer {
         if (sofas.contains(sofa) && sofa.getZimmer() != this) {
             if (sofas.size() > 1) {
                 sofas.remove(sofa);
-                sofa.ausZimmerNehmen();
+                moebelEntfernen(sofa);
             } else {
                 System.out.println("Ein Wohnzimmer benötigt mindestens ein Sofa");
             }
@@ -111,7 +111,7 @@ public class Wohnzimmer extends Zimmer {
             if (couchtisch.getZimmer() == null) {
                 if (couchtische.size() < maxCouchtische) {
                     couchtische.add(couchtisch);
-                    couchtisch.einrichten(this);
+                    moebelHinzufuegen(couchtisch);
                 } else {
                     System.out.println("Dieses Wohnzimmer hat schon die maximale Anzahl Couchtische. (" + maxCouchtische + ")");
                 }
@@ -127,7 +127,7 @@ public class Wohnzimmer extends Zimmer {
         if (couchtische.contains(couchtisch) && couchtisch.getZimmer() != this) {
             if (couchtische.size() > 1) {
                 couchtische.remove(couchtisch);
-                couchtisch.ausZimmerNehmen();
+                moebelEntfernen(couchtisch);
             } else {
                 System.out.println("Ein Wohnzimmer benötigt mindestens einen Couchtisch");
             }

@@ -6,7 +6,7 @@ public class Zimmer {
     private int anzahlFenster;
     private int anzahlLampen;
     private boolean lichtAn;
-    private String typ;
+    private String typ = "Nicht definiert";
     private final ArrayList<Moebel> moebelListe = new ArrayList<>();
 
     public int getAnzahlFenster() {

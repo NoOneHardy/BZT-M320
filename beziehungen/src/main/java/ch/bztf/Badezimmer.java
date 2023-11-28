@@ -28,30 +28,36 @@ public class Badezimmer extends Zimmer {
     }
 
     public void setWc(WC wc) {
-        if (wc != null) {
-            this.wc = wc;
-            wc.einrichten(this);
-        } else {
-            System.out.println("Ein Badezimmer braucht ein WC");
+        if (wc == null) {
+            wc = new WC();
+            System.out.println("Ein Badezimmer braucht ein WC.");
+            System.out.println("Ein neues WC wurde erstellt.");
         }
+        if (this.wc != null) moebelEntfernen(this.wc);
+        this.wc = wc;
+        moebelHinzufuegen(wc);
     }
 
     public void setLavabo(Lavabo lavabo) {
-        if (lavabo != null) {
-            this.lavabo = lavabo;
-            lavabo.einrichten(this);
-        } else {
-            System.out.println("Ein Badezimmer braucht ein Lavabo");
+        if (lavabo == null) {
+            lavabo = new Lavabo();
+            System.out.println("Ein Badezimmer braucht ein Lavabo.");
+            System.out.println("Ein neues Lavabo wurde erstellt.");
         }
+        if (this.lavabo != null) moebelEntfernen(this.lavabo);
+        this.lavabo = lavabo;
+        moebelHinzufuegen(lavabo);
     }
 
     public void setDusche(Dusche dusche) {
-        if (dusche != null) {
-            this.dusche = dusche;
-            dusche.einrichten(this);
-        } else {
-            System.out.println("Ein Badezimmer braucht eine Dusche");
+        if (dusche == null) {
+            dusche = new Dusche();
+            System.out.println("Ein Badezimmer braucht eine Dusche.");
+            System.out.println("Eine neue Dusche wurde erstellt.");
         }
+        if (this.dusche != null) moebelEntfernen(this.dusche);
+        this.dusche = dusche;
+        moebelHinzufuegen(dusche);
     }
 
     @Override

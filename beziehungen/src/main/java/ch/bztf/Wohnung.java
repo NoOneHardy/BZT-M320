@@ -15,7 +15,7 @@ public class Wohnung {
         setAdresse(adresse);
         setAnzahlZimmer(anzahlZimmer);
         for (int iZimmer = 0; iZimmer < anzahlZimmer; iZimmer++) {
-            zimmerListe.add(new Badezimmer(new WC(), new Lavabo(), new Dusche()));
+            zimmerListe.add(new Zimmer());
         }
     }
 
@@ -91,6 +91,7 @@ public class Wohnung {
         }
 
         Zimmer neuesZimmer = new Zimmer();
+        ArrayList<Moebel> sonstigeMoebel = new ArrayList<>(moebelListe);
 
         final ArrayList<Moebel> alteMoebel = altesZimmer.leeren();
         switch (typ) {
@@ -99,6 +100,7 @@ public class Wohnung {
                 for (Moebel moebel : moebelListe) {
                     if (moebel.getClass().equals(Bett.class)) {
                         betten.add((Bett) moebel);
+                        sonstigeMoebel.remove(moebel);
                     }
                 }
                 neuesZimmer = new Schlafzimmer(betten);
@@ -109,20 +111,26 @@ public class Wohnung {
                 Dusche dusche = null;
                 for (Moebel moebel : moebelListe) {
                     if (moebel.getClass().equals(WC.class)) {
-                        if (wc == null) wc = (WC) moebel;
-                        else {
+                        if (wc == null) {
+                            wc = (WC) moebel;
+                            sonstigeMoebel.remove(moebel);
+                        } else {
                             System.out.println("Ein Badezimmer kann nur ein WC haben.");
                             System.out.println("Alle anderen WCs werden mit den alten Möbeln zurückgegeben.");
                         }
                     } else if (moebel.getClass().equals(Lavabo.class)) {
-                        if (lavabo == null) lavabo = (Lavabo) moebel;
-                        else {
+                        if (lavabo == null) {
+                            lavabo = (Lavabo) moebel;
+                            sonstigeMoebel.remove(moebel);
+                        } else {
                             System.out.println("Ein Badezimmer kann nur ein Lavabo haben.");
                             System.out.println("Alle anderen Lavabos werden mit den alten Möbeln zurückgegeben.");
                         }
                     } else if (moebel.getClass().equals(Dusche.class)) {
-                        if (dusche == null) dusche = (Dusche) moebel;
-                        else {
+                        if (dusche == null) {
+                            dusche = (Dusche) moebel;
+                            sonstigeMoebel.remove(moebel);
+                        } else {
                             System.out.println("Ein Badezimmer kann nur eine Dusche haben.");
                             System.out.println("Alle anderen Duschen werden mit den alten Möbeln zurückgegeben.");
                         }
@@ -136,13 +144,19 @@ public class Wohnung {
                 for (Moebel moebel : moebelListe) {
                     if (moebel.getClass().equals(Sofa.class)) {
                         sofas.add((Sofa) moebel);
+                        sonstigeMoebel.remove(moebel);
                     }
                     if (moebel.getClass().equals(Couchtisch.class)) {
                         couchtische.add((Couchtisch) moebel);
+                        sonstigeMoebel.remove(moebel);
                     }
                 }
                 neuesZimmer = new Wohnzimmer(couchtische, sofas);
                 break;
+        }
+
+        for (Moebel moebel : sonstigeMoebel) {
+            neuesZimmer.moebelHinzufuegen(moebel);
         }
 
         zimmerListe.set(index, neuesZimmer);
