@@ -2,15 +2,46 @@ package ch.bztf;
 
 import java.util.ArrayList;
 
+/**
+ * Eine Wohnung besteht aus mehreren Zimmern.
+ * Wird die Wohnung zerstört, werden auch alle Zimmer zerstört.
+ * Wohnungen können vermietet werden.
+ */
 public class Wohnung {
+    /**
+     * Die Adresse der Wohnung
+     */
     private String adresse;
+    /**
+     * Der Mieter der Wohnung
+     */
     private Mieter mieter;
+    /**
+     * Die Anzahl Stockwerke der Wohnung
+     */
     private int anzahlStockwerke = 1;
+    /**
+     * Die Anzahl Zimmer der Wohnung
+     */
     private int anzahlZimmer;
+    /**
+     * Die Miete der Wohnung
+     */
     private double miete;
+    /**
+     * Ist die Wohnung frei?
+     */
     private boolean frei = true;
+    /**
+     * Die Zimmer der Wohnung
+     */
     private final ArrayList<Zimmer> zimmerListe = new ArrayList<>();
 
+    /**
+     * Erstellt eine Wohnung mit einer Adresse und deren Zimmer.
+     * @param anzahlZimmer Die Anzahl Zimmer der Wohnung
+     * @param adresse Die Adresse der Wohnung
+     */
     public Wohnung(int anzahlZimmer, String adresse) {
         setAdresse(adresse);
         setAnzahlZimmer(anzahlZimmer);
@@ -19,40 +50,78 @@ public class Wohnung {
         }
     }
 
+    /**
+     * Erstellt eine Wohnung mit einer Adresse, deren Zimmer und der Anzahl Stockwerke.
+     * @param anzahlZimmer Die Anzahl Zimmer der Wohnung
+     * @param adresse Die Adresse der Wohnung
+     * @param anzahlStockwerke Die Anzahl Stockwerke der Wohnung
+     */
     public Wohnung(int anzahlZimmer, String adresse, int anzahlStockwerke) {
         this(anzahlZimmer, adresse);
         setAnzahlStockwerke(anzahlStockwerke);
     }
 
-
+    /**
+     * Ein Getter für die Adresse der Wohnung.
+     * @return Die Adresse der Wohnungh
+     */
     public String getAdresse() {
         return adresse;
     }
 
+    /**
+     * Ein Getter für den Mieter der Wohnung.
+     * @return Der Mieter der Wohnung
+     */
     public Mieter getMieter() {
         return mieter;
     }
 
+    /**
+     * Ein Getter für die Anzahl Stockwerke der Wohnung.
+     * @return Die Anzahl Stockwerke der Wohnung
+     */
     public int getAnzahlStockwerke() {
         return anzahlStockwerke;
     }
 
+    /**
+     * Ein Getter für die Anzahl Zimmer der Wohnung.
+     * @return Die Anzahl Zimmer der Wohnung
+     */
     public int getAnzahlZimmer() {
         return anzahlZimmer;
     }
 
+    /**
+     * Ein Getter für die Miete der Wohnung.
+     * @return Die Miete der Wohnung
+     */
     public double getMiete() {
         return miete;
     }
 
+    /**
+     * Ein Getter für das Property, ob die Wohnung frei ist.
+     * @return Das Property, ob die Wohnung frei ist
+     */
     public boolean isFrei() {
         return frei;
     }
 
+    /**
+     * Ein Getter für die Zimmer der Wohnung.
+     * @return Die Zimmer der Wohnung
+     */
     public ArrayList<Zimmer> getZimmerListe() {
         return zimmerListe;
     }
 
+    /**
+     * Ein Getter für ein bestimmtes Zimmer der Wohnung.
+     * @param index Der Index des Zimmers
+     * @return Das Zimmer der Wohnung
+     */
     public Zimmer getZimmer(int index) {
         if (index < 0) index *= -1;
         if (index >= getAnzahlZimmer()) {
@@ -63,6 +132,10 @@ public class Wohnung {
         return getZimmerListe().get(index);
     }
 
+    /**
+     * Ein Getter für die Schlafzimmer der Wohnung.
+     * @return Die Schlafzimmer der Wohnung
+     */
     public ArrayList<Schlafzimmer> getSchlafzimmerListe() {
         ArrayList<Schlafzimmer> schlafzimmerListe = new ArrayList<>();
         for (Zimmer zimmer : zimmerListe) {
@@ -71,6 +144,10 @@ public class Wohnung {
         return schlafzimmerListe;
     }
 
+    /**
+     * Ein Getter für die Badezimmer der Wohnung.
+     * @return Die Badezimmer der Wohnung
+     */
     public ArrayList<Badezimmer> getBadezimmerListe() {
         ArrayList<Badezimmer> badezimmerListe = new ArrayList<>();
         for (Zimmer zimmer : zimmerListe) {
@@ -79,6 +156,10 @@ public class Wohnung {
         return badezimmerListe;
     }
 
+    /**
+     * Ein Getter für die Wohnzimmer der Wohnung.
+     * @return Die Wohnzimmer der Wohnung
+     */
     public ArrayList<Wohnzimmer> getWohnzimmerListe() {
         ArrayList<Wohnzimmer> wohnzimmerListe = new ArrayList<>();
         for (Zimmer zimmer : zimmerListe) {
@@ -87,20 +168,36 @@ public class Wohnung {
         return wohnzimmerListe;
     }
 
+    /**
+     * Ein Setter für die Miete der Wohnung.
+     * @param miete Die Miete der Wohnung
+     */
     public void setMiete(double miete) {
         if (miete < 0) miete *= -1;
         this.miete = miete;
     }
 
+    /**
+     * Ein Setter für den Mieter der Wohnung.
+     * @param mieter Der Mieter der Wohnung
+     */
     public void setMieter(Mieter mieter) {
         this.mieter = mieter;
         frei = mieter == null;
     }
 
+    /**
+     * Ein Setter für die Adresse der Wohnung.
+     * @param adresse Die Adresse der Wohnung
+     */
     private void setAdresse(String adresse) {
         this.adresse = adresse;
     }
 
+    /**
+     * Ein Setter für die Anzahl Zimmer der Wohnung.
+     * @param anzahlZimmer Die Anzahl Zimmer der Wohnung
+     */
     private void setAnzahlZimmer(int anzahlZimmer) {
         if (anzahlZimmer < 1) {
             System.out.println("Eine Wohnung benötigt mindestens ein Zimmer.");
@@ -110,6 +207,10 @@ public class Wohnung {
         this.anzahlZimmer = anzahlZimmer;
     }
 
+    /**
+     * Ein Setter für die Anzahl Stockwerke der Wohnung.
+     * @param anzahlStockwerke Die Anzahl Stockwerke der Wohnung
+     */
     private void setAnzahlStockwerke(int anzahlStockwerke) {
         if (anzahlStockwerke < 1) {
             System.out.println("Eine Wohnung benötigt mindestens ein Stockwerk");
@@ -119,6 +220,13 @@ public class Wohnung {
         this.anzahlStockwerke = anzahlStockwerke;
     }
 
+    /**
+     * Ändert den Typ eines Zimmers, räumt die alten Möbel aus und fügt neue Möbel hinzu.
+     * @param index Der Index des Zimmers
+     * @param typ Der neue Typ des Zimmers
+     * @param moebelListe Die Liste der Möbel, die in das Zimmer hinzugefügt werden sollen
+     * @return Die Möbel, die aus dem Zimmer entfernt wurden
+     */
     public ArrayList<Moebel> zimmerUmbauen(int index, String typ, ArrayList<Moebel> moebelListe) {
         if (index < 0) index *= -1;
         if (index > getAnzahlZimmer()) {
@@ -214,6 +322,9 @@ public class Wohnung {
         return alteMoebel;
     }
 
+    /**
+     * Gibt die Informationen der Wohnung in der Konsole aus.
+     */
     public void ausgabe() {
         System.out.println(getAdresse());
         System.out.println("\tAnzahl Stockwerke: " + getAnzahlStockwerke());

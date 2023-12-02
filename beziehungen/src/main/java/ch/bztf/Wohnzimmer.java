@@ -2,12 +2,30 @@ package ch.bztf;
 
 import java.util.ArrayList;
 
+/**
+ * Ein Wohnzimmer ist eine Subklasse von Zimmer.
+ */
 public class Wohnzimmer extends Zimmer {
+    /**
+     * Die Sofas des Wohnzimmers
+     */
     private final ArrayList<Sofa> sofas = new ArrayList<>();
+    /**
+     * Die Couchtische des Wohnzimmers
+     */
     private final ArrayList<Couchtisch> couchtische = new ArrayList<>();
+    /**
+     * Die maximale Anzahl Sofas des Wohnzimmers
+     */
     private int maxSofas = 1;
+    /**
+     * Die maximale Anzahl Couchtische des Wohnzimmers
+     */
     private int maxCouchtische = 1;
 
+    /**
+     * Erstellt ein Wohnzimmer mit einem oder mehreren Sofas und Couchtischen.
+     */
     public Wohnzimmer(ArrayList<Couchtisch> couchtische, ArrayList<Sofa> sofas) {
         super();
         setTyp("Wohnzimmer");
@@ -33,30 +51,58 @@ public class Wohnzimmer extends Zimmer {
         }
     }
 
+    /**
+     * Gibt die Sofas des Wohnzimmers zurück.
+     * @return Die Sofas des Wohnzimmers
+     */
     public ArrayList<Sofa> getSofas() {
         return sofas;
     }
 
+    /**
+     * Gibt die Couchtische des Wohnzimmers zurück.
+     * @return Die Couchtische des Wohnzimmers
+     */
     public ArrayList<Couchtisch> getCouchtische() {
         return couchtische;
     }
 
+    /**
+     * Gibt die maximale Anzahl Sofas des Wohnzimmers zurück.
+     * @return Die maximale Anzahl Sofas des Wohnzimmers
+     */
     public int getMaxSofas() {
         return maxSofas;
     }
 
+    /**
+     * Gibt die maximale Anzahl Couchtische des Wohnzimmers zurück.
+     * @return Die maximale Anzahl Couchtische des Wohnzimmers
+     */
     public int getMaxCouchtische() {
         return maxCouchtische;
     }
 
+    /**
+     * Setzt die maximale Anzahl Sofas des Wohnzimmers.
+     * @param maxSofas Die maximale Anzahl Sofas des Wohnzimmers
+     */
     private void setMaxSofas(int maxSofas) {
         this.maxSofas = maxSofas;
     }
 
+    /**
+     * Setzt die maximale Anzahl Couchtische des Wohnzimmers.
+     * @param maxCouchtische Die maximale Anzahl Couchtische des Wohnzimmers
+     */
     private void setMaxCouchtische(int maxCouchtische) {
         this.maxCouchtische = maxCouchtische;
     }
 
+    /**
+     * Fügt dem Wohnzimmer ein Sofa hinzu.
+     * @param sofa Das Sofa, welches dem Wohnzimmer hinzugefügt werden soll
+     */
     public void sofaHinzufuegen(Sofa sofa) {
         if (!sofas.contains(sofa)) {
             if (sofa.getZimmer() == null) {
@@ -74,6 +120,10 @@ public class Wohnzimmer extends Zimmer {
         }
     }
 
+    /**
+     * Entfernt ein Sofa aus dem Wohnzimmer.
+     * @param sofa Das Sofa, welches aus dem Wohnzimmer entfernt werden soll
+     */
     public void sofaEntfernen(Sofa sofa) {
         if (sofas.contains(sofa) && sofa.getZimmer() == this) {
             if (sofas.size() > 1) {
@@ -87,6 +137,10 @@ public class Wohnzimmer extends Zimmer {
         }
     }
 
+    /**
+     * Fügt dem Wohnzimmer einen Couchtisch hinzu.
+     * @param couchtisch Der Couchtisch, welcher dem Wohnzimmer hinzugefügt werden soll
+     */
     public void couchtischHinzufuegen(Couchtisch couchtisch) {
         if (!couchtische.contains(couchtisch)) {
             if (couchtisch.getZimmer() == null) {
@@ -104,6 +158,10 @@ public class Wohnzimmer extends Zimmer {
         }
     }
 
+    /**
+     * Entfernt ein Couchtisch aus dem Wohnzimmer.
+     * @param couchtisch Der Couchtisch, welcher aus dem Wohnzimmer entfernt werden soll
+     */
     public void couchtischEntfernen(Couchtisch couchtisch) {
         if (couchtische.contains(couchtisch) && couchtisch.getZimmer() == this) {
             if (couchtische.size() > 1) {
@@ -117,6 +175,9 @@ public class Wohnzimmer extends Zimmer {
         }
     }
 
+    /**
+     * Gibt die Informationen des Wohnzimmers in der Konsole aus.
+     */
     @Override
     public void ausgabe() {
         super.ausgabe();

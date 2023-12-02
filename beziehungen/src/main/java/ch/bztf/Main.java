@@ -2,7 +2,14 @@ package ch.bztf;
 
 import java.util.ArrayList;
 
+/**
+ * Die Main Klasse.
+ */
 public class Main {
+    /**
+     * Die Main Methode.
+     * @param args
+     */
     public static void main(String[] args) {
         Wohnung rebenWeg12 = new Wohnung(5, "Rebenweg 12", 2);
         Wohnung rebenWeg13 = new Wohnung(4, "Rebenweg 13");

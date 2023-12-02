@@ -2,10 +2,22 @@ package ch.bztf;
 
 import java.util.ArrayList;
 
+/**
+ * Ein Schlafzimmer ist eine Subklasse von Zimmer.
+ */
 public class Schlafzimmer extends Zimmer {
+    /**
+     * Die Betten des Schlafzimmers
+     */
     private final ArrayList<Bett> betten = new ArrayList<>();
+    /**
+     * Die maximale Anzahl Betten des Schlafzimmers
+     */
     private int maxBetten = 1;
 
+    /**
+     * Erstellt ein Schlafzimmer mit einem oder mehreren Betten.
+     */
     public Schlafzimmer(ArrayList<Bett> betten) {
         super();
         setTyp("Schlafzimmer");
@@ -21,18 +33,34 @@ public class Schlafzimmer extends Zimmer {
         }
     }
 
+    /**
+     * Gibt die Betten des Schlafzimmers zurück.
+     * @return Die Betten des Schlafzimmers
+     */
     public ArrayList<Bett> getBetten() {
         return betten;
     }
 
+    /**
+     * Gibt die maximale Anzahl Betten des Schlafzimmers zurück.
+     * @return Die maximale Anzahl Betten des Schlafzimmers
+     */
     public int getMaxBetten() {
         return this.maxBetten;
     }
 
+    /**
+     * Setzt die maximale Anzahl Betten des Schlafzimmers.
+     * @param maxBetten Die maximale Anzahl Betten des Schlafzimmers
+     */
     private void setMaxBetten(int maxBetten) {
         this.maxBetten = maxBetten;
     }
 
+    /**
+     * Fügt ein Bett dem Schlafzimmer hinzu.
+     * @param bett Das Bett, welches dem Schlafzimmer hinzugefügt werden soll
+     */
     public void bettHinzufuegen(Bett bett) {
         if (!betten.contains(bett)) {
             if (bett.getZimmer() == null) {
@@ -50,6 +78,10 @@ public class Schlafzimmer extends Zimmer {
         }
     }
 
+    /**
+     * Entfernt ein Bett aus dem Schlafzimmer.
+     * @param bett Das Bett, welches aus dem Schlafzimmer entfernt werden soll
+     */
     public void bettEntfernen(Bett bett) {
         if (betten.contains(bett) && bett.getZimmer() == this) {
             if (betten.size() > 1) {
@@ -63,6 +95,9 @@ public class Schlafzimmer extends Zimmer {
         }
     }
 
+    /**
+     * Gibt die Eigenschaften des Schlafzimmers in der Konsole aus.
+     */
     @Override
     public void ausgabe() {
         super.ausgabe();

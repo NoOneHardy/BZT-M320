@@ -1,29 +1,60 @@
 package ch.bztf;
 
-public class Couchtisch extends Moebel{
+/**
+ * Ein Couchtisch ist eine Subklasse von Möbel.
+ */
+public class Couchtisch extends Moebel {
+    /**
+     * Die Form des Couchtisches
+     */
     private String form;
+    /**
+     * Ist der Couchtisch dekoriert?
+     */
     private boolean dekoriert;
 
+    /**
+     * Erstellt einen Couchtisch bzw. ein Möbel vom Typ Couchtisch.
+     */
     public Couchtisch() {
         super("Couchtisch");
     }
 
+    /**
+     * Ein Getter für die Form des Couchtisches.
+     * @return Die Form des Couchtisches
+     */
     public String getForm() {
         return form;
     }
 
+    /**
+     * Ein Getter für das Property ob der Couchtisch dekoriert ist.
+     * @return Boolean ob der Couchtisch dekoriert ist
+     */
     public boolean isDekoriert() {
         return dekoriert;
     }
 
+    /**
+     * Ein Setter für die Form des Couchtisches.
+     * @param form Die Form des Couchtisches
+     */
     public void setForm(String form) {
         this.form = form;
     }
 
+    /**
+     * Ein Setter für das Property ob der Couchtisch dekoriert ist.
+     * @param dekoriert Boolean ob der Couchtisch dekoriert ist
+     */
     private void setDekoriert(boolean dekoriert) {
         this.dekoriert = dekoriert;
     }
 
+    /**
+     * Setzt das Property ob der Couchtisch dekoriert ist auf true.
+     */
     public void dekorieren() {
         if (!isDekoriert()) {
             setDekoriert(true);
@@ -32,6 +63,9 @@ public class Couchtisch extends Moebel{
         }
     }
 
+    /**
+     * Setzt das Property ob der Couchtisch dekoriert ist auf false.
+     */
     public void aufraeumen() {
         if (isDekoriert()) {
             setDekoriert(false);
@@ -40,6 +74,9 @@ public class Couchtisch extends Moebel{
         }
     }
 
+    /**
+     * Gibt die Eigenschaften des Couchtisches in der Konsole aus.
+     */
     @Override
     public void ausgabe() {
         super.ausgabe();
