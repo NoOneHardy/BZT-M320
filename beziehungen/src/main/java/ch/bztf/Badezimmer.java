@@ -1,7 +1,5 @@
 package ch.bztf;
 
-import java.util.ArrayList;
-
 public class Badezimmer extends Zimmer {
     private WC wc;
     private Lavabo lavabo;
