@@ -1,7 +1,7 @@
 package ch.bztf;
 
 public class Sofa extends Moebel{
-    private int plaetze;
+    private int plaetze = 2;
     private boolean ecksofa;
 
     public Sofa() {
@@ -22,5 +22,13 @@ public class Sofa extends Moebel{
 
     public void setEcksofa(boolean ecksofa) {
         this.ecksofa = ecksofa;
+    }
+
+    @Override
+    public void ausgabe() {
+        super.ausgabe();
+        System.out.println("\tPlätze: " + getPlaetze());
+        System.out.println("\tEcksofa: " + (isEcksofa() ? "Ja" : "Nein"));
+        System.out.println();
     }
 }

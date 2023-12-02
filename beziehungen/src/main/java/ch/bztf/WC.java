@@ -18,6 +18,7 @@ public class WC extends Moebel {
 
     public void setElektrisch(boolean elektrisch) {
         this.elektrisch = elektrisch;
+        if (isBenutzt()) spuelen();
     }
 
     private void setBenutzt(boolean benutzt) {
@@ -26,9 +27,18 @@ public class WC extends Moebel {
 
     public void benutzen() {
         setBenutzt(true);
+        if (isElektrisch()) spuelen();
     }
 
     public void spuelen() {
         setBenutzt(false);
+    }
+
+    @Override
+    public void ausgabe() {
+        super.ausgabe();
+        System.out.println("\tElektrisch: " + (isElektrisch() ? "Ja" : "Nein"));
+        System.out.println("\tBenutzt: " + (isBenutzt() ? "Ja" : "Nein"));
+        System.out.println();
     }
 }

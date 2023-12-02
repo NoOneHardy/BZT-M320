@@ -50,6 +50,7 @@ public class Moebel {
     }
 
     public void setWert(double wert) {
+        if (wert < 0) wert *= -1;
         this.wert = wert;
     }
 
@@ -70,7 +71,7 @@ public class Moebel {
     }
 
     public void einrichten(Zimmer zimmer) {
-        if (this.zimmer != zimmer) {
+        if (getZimmer() != zimmer) {
             setZimmer(zimmer);
         } else {
             System.out.println("Dieses Möbel befindet sich bereits in diesem Zimmer.");
@@ -78,10 +79,21 @@ public class Moebel {
     }
 
     public void ausZimmerNehmen() {
-        if (zimmer != null) {
+        if (getZimmer() != null) {
             setZimmer(null);
         } else {
             System.out.println("Dieses Möbel ist in keinem Zimmer.");
         }
+    }
+
+    public void ausgabe() {
+        System.out.println(getTyp());
+        System.out.println("\tMaterial: " + (getMaterial() == null ? "Unbekannt" : getMaterial()));
+        System.out.println("\tWert: " + (getWert() == 0 ? "Unbekannt" : "CHF " + getWert()));
+        System.out.println("\tHersteller: " + (getHersteller() == null ? "Unbekannt" : getHersteller()));
+        System.out.println("\tBreite: " + (getBreite() == 0 ? "Unbekannt" : getBreite() + "cm"));
+        System.out.println("\tLänge: " + (getLaenge() == 0 ? "Unbekannt" : getLaenge() + "cm"));
+        if (getZimmer() != null) System.out.println("\tZimmer: " + getZimmer().getTyp());
+        System.out.println();
     }
 }

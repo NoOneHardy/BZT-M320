@@ -8,15 +8,6 @@ public class Wohnzimmer extends Zimmer {
     private int maxSofas = 1;
     private int maxCouchtische = 1;
 
-    public Wohnzimmer(Couchtisch couchtisch, Sofa sofa, int maxSofas, int maxCouchtische) {
-        super();
-        setTyp("Wohnzimmer");
-        setMaxSofas(maxSofas);
-        setMaxCouchtische(maxCouchtische);
-        sofaHinzufuegen(sofa);
-        couchtischHinzufuegen(couchtisch);
-    }
-
     public Wohnzimmer(ArrayList<Couchtisch> couchtische, ArrayList<Sofa> sofas) {
         super();
         setTyp("Wohnzimmer");
@@ -59,20 +50,10 @@ public class Wohnzimmer extends Zimmer {
     }
 
     private void setMaxSofas(int maxSofas) {
-        if (maxSofas < 1) {
-            System.out.println("Ein Wohnzimmer benötigt mindestens ein Sofa.");
-            System.out.println("Die Anzahl Sofas wird auf eins gesetzt.");
-            maxSofas = 1;
-        }
         this.maxSofas = maxSofas;
     }
 
     private void setMaxCouchtische(int maxCouchtische) {
-        if (maxCouchtische < 1) {
-            System.out.println("Ein Wohnzimmer benötigt mindestens einen Couchtisch .");
-            System.out.println("Die Anzahl Couchtische wird auf eins gesetzt.");
-            maxCouchtische = 1;
-        }
         this.maxCouchtische = maxCouchtische;
     }
 
@@ -94,7 +75,7 @@ public class Wohnzimmer extends Zimmer {
     }
 
     public void sofaEntfernen(Sofa sofa) {
-        if (sofas.contains(sofa) && sofa.getZimmer() != this) {
+        if (sofas.contains(sofa) && sofa.getZimmer() == this) {
             if (sofas.size() > 1) {
                 sofas.remove(sofa);
                 moebelEntfernen(sofa);
@@ -124,7 +105,7 @@ public class Wohnzimmer extends Zimmer {
     }
 
     public void couchtischEntfernen(Couchtisch couchtisch) {
-        if (couchtische.contains(couchtisch) && couchtisch.getZimmer() != this) {
+        if (couchtische.contains(couchtisch) && couchtisch.getZimmer() == this) {
             if (couchtische.size() > 1) {
                 couchtische.remove(couchtisch);
                 moebelEntfernen(couchtisch);
@@ -137,16 +118,11 @@ public class Wohnzimmer extends Zimmer {
     }
 
     @Override
-    public ArrayList<Moebel> leeren() {
-        ArrayList<Moebel> alteMoebel = super.leeren();
-        for (Sofa sofa : sofas) {
-            alteMoebel.add(sofa);
-            sofaEntfernen(sofa);
-        }
-        for (Couchtisch couchtisch : couchtische) {
-            alteMoebel.add(couchtisch);
-            couchtischEntfernen(couchtisch);
-        }
-        return alteMoebel;
+    public void ausgabe() {
+        super.ausgabe();
+        System.out.println("\tMaximale Anzahl Sofas: " + getMaxSofas());
+        System.out.println("\tMomentane Anzahl Sofas: " + getSofas().size());
+        System.out.println("\tMaximale Anzahl Couchtische: " + getMaxCouchtische());
+        System.out.println("\tMomentane Anzahl Couchtische: " + getCouchtische().size());
     }
 }

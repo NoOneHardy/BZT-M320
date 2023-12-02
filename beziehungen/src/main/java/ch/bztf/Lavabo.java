@@ -2,7 +2,7 @@ package ch.bztf;
 
 public class Lavabo extends Moebel {
     private String form;
-    private String hahnTyp;
+    private int anzahlHaehne = 1;
 
     public Lavabo() {
         super("Lavabo");
@@ -12,15 +12,23 @@ public class Lavabo extends Moebel {
         return this.form;
     }
 
-    public String getHahnTyp() {
-        return hahnTyp;
+    public int getAnzahlHaehne() {
+        return anzahlHaehne;
     }
 
     public void setForm(String form) {
         this.form = form;
     }
 
-    public void setHahnTyp(String hahnTyp) {
-        this.hahnTyp = hahnTyp;
+    public void setAnzahlHaehne(int anzahlHaehne) {
+        this.anzahlHaehne = anzahlHaehne;
+    }
+
+    @Override
+    public void ausgabe() {
+        super.ausgabe();
+        System.out.println("\tForm: " + (getForm() == null ? "Unbekannt" : getForm()));
+        System.out.println("\tAnzahl Hähne: " + getAnzahlHaehne());
+        System.out.println();
     }
 }

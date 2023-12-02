@@ -6,13 +6,6 @@ public class Schlafzimmer extends Zimmer {
     private final ArrayList<Bett> betten = new ArrayList<>();
     private int maxBetten = 1;
 
-    public Schlafzimmer(Bett bett, int maxBetten) {
-        super();
-        setTyp("Schlafzimmer");
-        setMaxBetten(maxBetten);
-        bettHinzufuegen(bett);
-    }
-
     public Schlafzimmer(ArrayList<Bett> betten) {
         super();
         setTyp("Schlafzimmer");
@@ -37,11 +30,6 @@ public class Schlafzimmer extends Zimmer {
     }
 
     private void setMaxBetten(int maxBetten) {
-        if (maxBetten < 1) {
-            System.out.println("Ein Schlafzimmer benötigt mindestens ein Bett.");
-            System.out.println("Die Anzahl Betten wird auf eins gesetzt.");
-            maxBetten = 1;
-        }
         this.maxBetten = maxBetten;
     }
 
@@ -66,7 +54,7 @@ public class Schlafzimmer extends Zimmer {
         if (betten.contains(bett) && bett.getZimmer() == this) {
             if (betten.size() > 1) {
                 betten.remove(bett);
-                bett.ausZimmerNehmen();
+                moebelEntfernen(bett);
             } else {
                 System.out.println("Ein Schlafzimmer benötigt mindestens ein Bett.");
             }
@@ -76,12 +64,10 @@ public class Schlafzimmer extends Zimmer {
     }
 
     @Override
-    public ArrayList<Moebel> leeren() {
-        ArrayList<Moebel> alteMoebel = super.leeren();
-        for (Bett bett : betten) {
-            alteMoebel.add(bett);
-            bettEntfernen(bett);
-        }
-        return alteMoebel;
+    public void ausgabe() {
+        super.ausgabe();
+        System.out.println("\tMaximale Anzahl Betten: " + getMaxBetten());
+        System.out.println("\tMomentane Anzahl Betten: " + getBetten().size());
+        System.out.println();
     }
 }

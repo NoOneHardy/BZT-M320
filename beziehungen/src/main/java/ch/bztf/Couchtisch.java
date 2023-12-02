@@ -39,4 +39,12 @@ public class Couchtisch extends Moebel{
             System.out.println("Dieser Couchtisch ist nicht dekoriert.");
         }
     }
+
+    @Override
+    public void ausgabe() {
+        super.ausgabe();
+        System.out.println("\tForm: " + (getForm() == null ? "Unbekannt" : getForm()));
+        System.out.println("\tDekoriert: " + (isDekoriert() ? "Ja" : "Nein"));
+        System.out.println();
+    }
 }

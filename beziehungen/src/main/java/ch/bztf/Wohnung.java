@@ -8,13 +8,13 @@ public class Wohnung {
     private int anzahlStockwerke = 1;
     private int anzahlZimmer;
     private double miete;
-    private boolean frei;
+    private boolean frei = true;
     private final ArrayList<Zimmer> zimmerListe = new ArrayList<>();
 
     public Wohnung(int anzahlZimmer, String adresse) {
         setAdresse(adresse);
         setAnzahlZimmer(anzahlZimmer);
-        for (int iZimmer = 0; iZimmer < anzahlZimmer; iZimmer++) {
+        for (int iZimmer = 0; iZimmer < getAnzahlZimmer(); iZimmer++) {
             zimmerListe.add(new Zimmer());
         }
     }
@@ -53,12 +53,48 @@ public class Wohnung {
         return zimmerListe;
     }
 
+    public Zimmer getZimmer(int index) {
+        if (index < 0) index *= -1;
+        if (index >= getAnzahlZimmer()) {
+            System.out.println("Diese Wohnung hat nicht so viele Zimmer.");
+            System.out.println("Das Zimmer mit dem Index 0 wird zurückgegeben.");
+            index = 0;
+        }
+        return getZimmerListe().get(index);
+    }
+
+    public ArrayList<Schlafzimmer> getSchlafzimmerListe() {
+        ArrayList<Schlafzimmer> schlafzimmerListe = new ArrayList<>();
+        for (Zimmer zimmer : zimmerListe) {
+            if (zimmer.getClass().equals(Schlafzimmer.class)) schlafzimmerListe.add((Schlafzimmer) zimmer);
+        }
+        return schlafzimmerListe;
+    }
+
+    public ArrayList<Badezimmer> getBadezimmerListe() {
+        ArrayList<Badezimmer> badezimmerListe = new ArrayList<>();
+        for (Zimmer zimmer : zimmerListe) {
+            if (zimmer.getClass().equals(Badezimmer.class)) badezimmerListe.add((Badezimmer) zimmer);
+        }
+        return badezimmerListe;
+    }
+
+    public ArrayList<Wohnzimmer> getWohnzimmerListe() {
+        ArrayList<Wohnzimmer> wohnzimmerListe = new ArrayList<>();
+        for (Zimmer zimmer : zimmerListe) {
+            if (zimmer.getClass().equals(Wohnzimmer.class)) wohnzimmerListe.add((Wohnzimmer) zimmer);
+        }
+        return wohnzimmerListe;
+    }
+
     public void setMiete(double miete) {
+        if (miete < 0) miete *= -1;
         this.miete = miete;
     }
 
     public void setMieter(Mieter mieter) {
         this.mieter = mieter;
+        frei = mieter == null;
     }
 
     private void setAdresse(String adresse) {
@@ -84,13 +120,21 @@ public class Wohnung {
     }
 
     public ArrayList<Moebel> zimmerUmbauen(int index, String typ, ArrayList<Moebel> moebelListe) {
+        if (index < 0) index *= -1;
+        if (index > getAnzahlZimmer()) {
+            System.out.println("Die Wohnung " + getAdresse() + " hat nur " + getAnzahlZimmer() + " Zimmer.");
+            System.out.println("Der angegebene Index " + index + " ist zu hoch.");
+            System.out.println("Der Umbau wird nicht durchgeführt.");
+            return new ArrayList<>();
+        }
+        typ = typ.substring(0, 1).toUpperCase() + typ.substring(1);
         Zimmer altesZimmer = zimmerListe.get(index);
         if (altesZimmer.getTyp().equals(typ)) {
-            System.out.println("Dieses Zimmer ist schon von diesem Typ.");
+            System.out.println("Dieses Zimmer ist bereits ein " + typ);
             return null;
         }
 
-        Zimmer neuesZimmer = new Zimmer();
+        Zimmer neuesZimmer;
         ArrayList<Moebel> sonstigeMoebel = new ArrayList<>(moebelListe);
 
         final ArrayList<Moebel> alteMoebel = altesZimmer.leeren();
@@ -116,7 +160,7 @@ public class Wohnung {
                             sonstigeMoebel.remove(moebel);
                         } else {
                             System.out.println("Ein Badezimmer kann nur ein WC haben.");
-                            System.out.println("Alle anderen WCs werden mit den alten Möbeln zurückgegeben.");
+                            System.out.println("Alle anderen WCs werden zu den sonstigen Möbeln hinzugefügt");
                         }
                     } else if (moebel.getClass().equals(Lavabo.class)) {
                         if (lavabo == null) {
@@ -124,7 +168,7 @@ public class Wohnung {
                             sonstigeMoebel.remove(moebel);
                         } else {
                             System.out.println("Ein Badezimmer kann nur ein Lavabo haben.");
-                            System.out.println("Alle anderen Lavabos werden mit den alten Möbeln zurückgegeben.");
+                            System.out.println("Alle anderen Lavabos werden zu den sonstigen Möbeln hinzugefügt");
                         }
                     } else if (moebel.getClass().equals(Dusche.class)) {
                         if (dusche == null) {
@@ -132,7 +176,7 @@ public class Wohnung {
                             sonstigeMoebel.remove(moebel);
                         } else {
                             System.out.println("Ein Badezimmer kann nur eine Dusche haben.");
-                            System.out.println("Alle anderen Duschen werden mit den alten Möbeln zurückgegeben.");
+                            System.out.println("Alle anderen Duschen werden zu den sonstigen Möbeln hinzugefügt");
                         }
                     }
                 }
@@ -153,37 +197,36 @@ public class Wohnung {
                 }
                 neuesZimmer = new Wohnzimmer(couchtische, sofas);
                 break;
+            default:
+                neuesZimmer = new Zimmer();
+                neuesZimmer.setTyp(typ);
         }
 
         for (Moebel moebel : sonstigeMoebel) {
             neuesZimmer.moebelHinzufuegen(moebel);
         }
 
+        neuesZimmer.setAnzahlLampen(altesZimmer.getAnzahlLampen());
+        neuesZimmer.setLichtAn(false);
+        neuesZimmer.setAnzahlFenster(altesZimmer.getAnzahlFenster());
+
         zimmerListe.set(index, neuesZimmer);
         return alteMoebel;
     }
 
-    public ArrayList<Schlafzimmer> getSchlafzimmerListe() {
-        ArrayList<Schlafzimmer> schlafzimmerListe = new ArrayList<>();
-        for (Zimmer zimmer : zimmerListe) {
-            if (zimmer.getClass().equals(Schlafzimmer.class)) schlafzimmerListe.add((Schlafzimmer) zimmer);
+    public void ausgabe() {
+        System.out.println(getAdresse());
+        System.out.println("\tAnzahl Stockwerke: " + getAnzahlStockwerke());
+        System.out.println("\tAnzahl Zimmer: " + getAnzahlZimmer());
+        for (Zimmer zimmer : getZimmerListe()) {
+            System.out.println("\t\t" + zimmer.getTyp());
         }
-        return schlafzimmerListe;
-    }
-
-    public ArrayList<Badezimmer> getBadezimmerListe() {
-        ArrayList<Badezimmer> badezimmerListe = new ArrayList<>();
-        for (Zimmer zimmer : zimmerListe) {
-            if (zimmer.getClass().equals(Badezimmer.class)) badezimmerListe.add((Badezimmer) zimmer);
-        }
-        return badezimmerListe;
-    }
-
-    public ArrayList<Wohnzimmer> getWohnzimmerListe() {
-        ArrayList<Wohnzimmer> wohnzimmerListe = new ArrayList<>();
-        for (Zimmer zimmer : zimmerListe) {
-            if (zimmer.getClass().equals(Wohnzimmer.class)) wohnzimmerListe.add((Wohnzimmer) zimmer);
-        }
-        return wohnzimmerListe;
+        System.out.println("\tAnzahl Schlafzimmer: " + getSchlafzimmerListe().size());
+        System.out.println("\tAnzahl Wohnzimmer: " + getWohnzimmerListe().size());
+        System.out.println("\tAnzahl Badezimmer: " + getBadezimmerListe().size());
+        System.out.println("\tMiete: CHF " + getMiete());
+        System.out.println("\tFrei: " + (isFrei() ? "Ja" : "Nein"));
+        if (!isFrei()) System.out.println("\tMieter: " + getMieter().getName());
+        System.out.println();
     }
 }

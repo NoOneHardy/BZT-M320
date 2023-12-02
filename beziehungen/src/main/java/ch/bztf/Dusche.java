@@ -23,4 +23,12 @@ public class Dusche extends Moebel {
     public void setTransparent(boolean transparent) {
         this.transparent = transparent;
     }
+
+    @Override
+    public void ausgabe() {
+        super.ausgabe();
+        System.out.println("\tTürtyp: " + (getTuerTyp() == null ? "Unbekannt" : getTuerTyp()));
+        System.out.println("\tTransparent: " + (isTransparent() ? "Ja" : "Nein"));
+        System.out.println();
+    }
 }

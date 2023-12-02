@@ -29,46 +29,37 @@ public class Badezimmer extends Zimmer {
 
     public void setWc(WC wc) {
         if (wc == null) {
+            if (getWc() != null) return;
             wc = new WC();
             System.out.println("Ein Badezimmer braucht ein WC.");
             System.out.println("Ein neues WC wurde erstellt.");
         }
-        if (this.wc != null) moebelEntfernen(this.wc);
+        if (getWc() != null) moebelEntfernen(getWc());
         this.wc = wc;
         moebelHinzufuegen(wc);
     }
 
     public void setLavabo(Lavabo lavabo) {
         if (lavabo == null) {
+            if (getLavabo() != null) return;
             lavabo = new Lavabo();
             System.out.println("Ein Badezimmer braucht ein Lavabo.");
             System.out.println("Ein neues Lavabo wurde erstellt.");
         }
-        if (this.lavabo != null) moebelEntfernen(this.lavabo);
+        if (getLavabo() != null) moebelEntfernen(getLavabo());
         this.lavabo = lavabo;
         moebelHinzufuegen(lavabo);
     }
 
     public void setDusche(Dusche dusche) {
         if (dusche == null) {
+            if (getDusche() != null) return;
             dusche = new Dusche();
             System.out.println("Ein Badezimmer braucht eine Dusche.");
             System.out.println("Eine neue Dusche wurde erstellt.");
         }
-        if (this.dusche != null) moebelEntfernen(this.dusche);
+        if (getDusche() != null) moebelEntfernen(getDusche());
         this.dusche = dusche;
         moebelHinzufuegen(dusche);
-    }
-
-    @Override
-    public ArrayList<Moebel> leeren() {
-        final ArrayList<Moebel> alteMoebel = super.leeren();
-        alteMoebel.add(wc);
-        alteMoebel.add(lavabo);
-        alteMoebel.add(dusche);
-        wc.ausZimmerNehmen();
-        lavabo.ausZimmerNehmen();
-        dusche.ausZimmerNehmen();
-        return alteMoebel;
     }
 }

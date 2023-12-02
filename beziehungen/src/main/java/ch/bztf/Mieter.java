@@ -4,7 +4,6 @@ import java.util.ArrayList;
 
 public class Mieter {
     private String name;
-    private int anzahlWohnungen;
     private final ArrayList<Wohnung> wohnungen = new ArrayList<>();
 
     public Mieter(String name) {
@@ -17,7 +16,7 @@ public class Mieter {
     }
 
     public int getAnzahlWohnungen() {
-        return anzahlWohnungen;
+        return wohnungen.size();
     }
 
     public ArrayList<Wohnung> getWohnungen() {
@@ -33,9 +32,7 @@ public class Mieter {
             System.out.println("Diese Wohnung wird bereits an " + wohnung.getMieter().getName() + " vermietet.");
             return;
         }
-
         wohnungen.add(wohnung);
-        anzahlWohnungen++;
         wohnung.setMieter(this);
     }
 
@@ -44,14 +41,22 @@ public class Mieter {
             System.out.println("Diese Wohnung wird nicht vermietet.");
             return;
         }
-
         if (wohnung.getMieter() != this || !wohnungen.contains(wohnung)) {
             System.out.println("Diese Wohnung wird nicht an diesen Mieter vermietet.");
             return;
         }
 
         wohnungen.remove(wohnung);
-        anzahlWohnungen--;
         wohnung.setMieter(null);
+    }
+
+    public void ausgabe() {
+        System.out.println(getName());
+        System.out.println("\tAnzahl Wohnungen: " + getAnzahlWohnungen());
+        for (Wohnung wohnung : getWohnungen()) {
+            System.out.println("\t\t" + wohnung.getAdresse());
+        }
+
+        System.out.println();
     }
 }

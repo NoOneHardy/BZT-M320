@@ -1,7 +1,7 @@
 package ch.bztf;
 
 public class Bett extends Moebel {
-    private int plaetze;
+    private int plaetze = 1;
     private boolean gemacht;
 
     public Bett() {
@@ -26,5 +26,13 @@ public class Bett extends Moebel {
 
     public void machen() {
         setGemacht(true);
+    }
+
+    @Override
+    public void ausgabe() {
+        super.ausgabe();
+        System.out.println("\tGemacht: " + (isGemacht() ? "Ja" : "Nein"));
+        System.out.println("\tPlätze: " + getPlaetze());
+        System.out.println();
     }
 }
