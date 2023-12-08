@@ -236,7 +236,7 @@ public class Wohnung {
             return new ArrayList<>();
         }
         typ = typ.substring(0, 1).toUpperCase() + typ.substring(1);
-        Zimmer altesZimmer = zimmerListe.get(index);
+        Zimmer altesZimmer = getZimmerListe().get(index);
         if (altesZimmer.getTyp().equals(typ)) {
             System.out.println("Dieses Zimmer ist bereits ein " + typ);
             return null;
