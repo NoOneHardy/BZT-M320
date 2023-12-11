@@ -23,7 +23,7 @@ public class Zimmer {
      */
     private String typ = "Nicht definiert";
     /**
-     * Die Möbel des Zimmers
+     * Die Moebel des Zimmers
      */
     private final ArrayList<Moebel> moebelListe = new ArrayList<>();
 
@@ -33,7 +33,7 @@ public class Zimmer {
     public Zimmer() {}
 
     /**
-     * Ein Getter für die Anzahl Fenster des Zimmers.
+     * Ein Getter fuer die Anzahl Fenster des Zimmers.
      * @return Die Anzahl Fenster des Zimmers
      */
     public int getAnzahlFenster() {
@@ -41,7 +41,7 @@ public class Zimmer {
     }
 
     /**
-     * Ein Getter für die Anzahl Lampen des Zimmers.
+     * Ein Getter fuer die Anzahl Lampen des Zimmers.
      * @return Die Anzahl Lampen des Zimmers
      */
     public int getAnzahlLampen() {
@@ -49,7 +49,7 @@ public class Zimmer {
     }
 
     /**
-     * Ein Getter für den Lichtstatus des Zimmers.
+     * Ein Getter fuer den Lichtstatus des Zimmers.
      * @return Ist das Licht des Zimmers an?
      */
     public boolean isLichtAn() {
@@ -57,7 +57,7 @@ public class Zimmer {
     }
 
     /**
-     * Ein Getter für den Typ des Zimmers.
+     * Ein Getter fuer den Typ des Zimmers.
      * @return Der Typ des Zimmers
      */
     public String getTyp() {
@@ -65,15 +65,15 @@ public class Zimmer {
     }
 
     /**
-     * Ein Getter für die Möbel des Zimmers.
-     * @return Die Möbel des Zimmers
+     * Ein Getter fuer die Moebel des Zimmers.
+     * @return Die Moebel des Zimmers
      */
     public ArrayList<Moebel> getMoebelListe() {
         return moebelListe;
     }
 
     /**
-     * Ein Setter für den Typ des Zimmers.
+     * Ein Setter fuer den Typ des Zimmers.
      * @param typ Der Typ des Zimmers
      */
     public void setTyp(String typ) {
@@ -81,7 +81,7 @@ public class Zimmer {
     }
 
     /**
-     * Ein Setter für die Anzahl Fenster des Zimmers.
+     * Ein Setter fuer die Anzahl Fenster des Zimmers.
      * @param anzahlFenster Die Anzahl Fenster des Zimmers
      */
     public void setAnzahlFenster(int anzahlFenster) {
@@ -89,7 +89,7 @@ public class Zimmer {
     }
 
     /**
-     * Ein Setter für die Anzahl Lampen des Zimmers.
+     * Ein Setter fuer die Anzahl Lampen des Zimmers.
      * @param anzahlLampen Die Anzahl Lampen des Zimmers
      */
     public void setAnzahlLampen(int anzahlLampen) {
@@ -97,7 +97,7 @@ public class Zimmer {
     }
 
     /**
-     * Ein Setter für den Lichtstatus des Zimmers.
+     * Ein Setter fuer den Lichtstatus des Zimmers.
      * @param lichtAn Ist das Licht des Zimmers an?
      */
     public void setLichtAn(boolean lichtAn) {
@@ -106,21 +106,21 @@ public class Zimmer {
     }
 
     /**
-     * Fügt dem Zimmer ein Möbel hinzu.
-     * @param moebel Das Möbel, welches dem Zimmer hinzugefügt werden soll
+     * Fuegt dem Zimmer ein Moebel hinzu.
+     * @param moebel Das Moebel, welches dem Zimmer hinzugefuegt werden soll
      */
     public void moebelHinzufuegen(Moebel moebel) {
         if (!moebelListe.contains(moebel) && moebel.getZimmer() == null) {
             moebelListe.add(moebel);
             moebel.einrichten(this);
         } else {
-            System.out.println("Das Möbel befindet sich schon in einem anderen oder diesem Zimmer");
+            System.out.println("Das Moebel befindet sich schon in einem anderen oder diesem Zimmer");
         }
     }
 
     /**
-     * Entfernt ein Möbel aus dem Zimmer.
-     * @param moebel Das Möbel, welches aus dem Zimmer entfernt werden soll
+     * Entfernt ein Moebel aus dem Zimmer.
+     * @param moebel Das Moebel, welches aus dem Zimmer entfernt werden soll
      */
     public void moebelEntfernen(Moebel moebel) {
         if (moebelListe.contains(moebel) && moebel.getZimmer() == this) {
@@ -142,7 +142,7 @@ public class Zimmer {
 
     /**
      * Leert das Zimmer.
-     * @return Die Möbel, welche sich im Zimmer befanden
+     * @return Die Moebel, welche sich im Zimmer befanden
      */
     public ArrayList<Moebel> leeren() {
         ArrayList<Moebel> alteMoebel = new ArrayList<>(moebelListe);
@@ -160,7 +160,7 @@ public class Zimmer {
         System.out.println("\tAnzahl Fenster: " + getAnzahlFenster());
         System.out.println("\tAnzahl Lampen: " + getAnzahlLampen());
         if (getAnzahlLampen() > 0) System.out.println("\tLicht an: " + (isLichtAn() ? "Ja" : "Nein"));
-        System.out.println("\tAnzahl Möbel: " + getMoebelListe().size());
+        System.out.println("\tAnzahl Moebel: " + getMoebelListe().size());
         for (Moebel moebel : getMoebelListe()) {
             System.out.println("\t\t" + moebel.getTyp());
         }

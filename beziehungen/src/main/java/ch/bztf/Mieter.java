@@ -24,7 +24,7 @@ public class Mieter {
     }
 
     /**
-     * Ein Getter für den Namen des Mieters.
+     * Ein Getter fuer den Namen des Mieters.
      * @return Der Name des Mieters
      */
     public String getName() {
@@ -32,7 +32,7 @@ public class Mieter {
     }
 
     /**
-     * Ein Getter für die Anzahl Wohnungen des Mieters.
+     * Ein Getter fuer die Anzahl Wohnungen des Mieters.
      * @return Die Anzahl Wohnungen des Mieters
      */
     public int getAnzahlWohnungen() {
@@ -40,7 +40,7 @@ public class Mieter {
     }
 
     /**
-     * Ein Getter für die Wohnungen des Mieters.
+     * Ein Getter fuer die Wohnungen des Mieters.
      * @return Die Wohnungen des Mieters
      */
     public ArrayList<Wohnung> getWohnungen() {
@@ -48,7 +48,7 @@ public class Mieter {
     }
 
     /**
-     * Ein Setter für den Namen des Mieters.
+     * Ein Setter fuer den Namen des Mieters.
      * @param name Der Name des Mieters
      */
     public void setName(String name) {
@@ -69,8 +69,8 @@ public class Mieter {
     }
 
     /**
-     * Kündet eine Wohnung.
-     * @param wohnung Die zu kündende Wohnung
+     * Kuendet eine Wohnung.
+     * @param wohnung Die zu kuendende Wohnung
      */
     public void mietvertragKuenden(Wohnung wohnung) {
         if (wohnung.isFrei()) {

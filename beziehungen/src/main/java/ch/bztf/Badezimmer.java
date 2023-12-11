@@ -32,7 +32,7 @@ public class Badezimmer extends Zimmer {
     }
 
     /**
-     * Ein Getter für das WC des Badezimmers.
+     * Ein Getter fuer das WC des Badezimmers.
      * @return Das WC des Badezimmers
      */
     public WC getWc() {
@@ -40,7 +40,7 @@ public class Badezimmer extends Zimmer {
     }
 
     /**
-     * Ein Getter für das Lavabo des Badezimmers.
+     * Ein Getter fuer das Lavabo des Badezimmers.
      * @return Das Lavabo des Badezimmers
      */
     public Lavabo getLavabo() {
@@ -48,7 +48,7 @@ public class Badezimmer extends Zimmer {
     }
 
     /**
-     * Ein Getter für die Dusche des Badezimmers.
+     * Ein Getter fuer die Dusche des Badezimmers.
      * @return Die Dusche des Badezimmers
      */
     public Dusche getDusche() {
@@ -56,7 +56,7 @@ public class Badezimmer extends Zimmer {
     }
 
     /**
-     * Ein Setter für das WC des Badezimmers.
+     * Ein Setter fuer das WC des Badezimmers.
      * @param wc Das WC des Badezimmers
      */
     public void setWc(WC wc) {
@@ -72,7 +72,7 @@ public class Badezimmer extends Zimmer {
     }
 
     /**
-     * Ein Setter für das Lavabo des Badezimmers.
+     * Ein Setter fuer das Lavabo des Badezimmers.
      * @param lavabo Das Lavabo des Badezimmers
      */
     public void setLavabo(Lavabo lavabo) {
@@ -88,7 +88,7 @@ public class Badezimmer extends Zimmer {
     }
 
     /**
-     * Ein Setter für die Dusche des Badezimmers.
+     * Ein Setter fuer die Dusche des Badezimmers.
      * @param dusche Die Dusche des Badezimmers
      */
     public void setDusche(Dusche dusche) {

@@ -4,8 +4,8 @@ import java.util.ArrayList;
 
 /**
  * Eine Wohnung besteht aus mehreren Zimmern.
- * Wird die Wohnung zerstört, werden auch alle Zimmer zerstört.
- * Wohnungen können vermietet werden.
+ * Wird die Wohnung zerstoert, werden auch alle Zimmer zerstoert.
+ * Wohnungen koennen vermietet werden.
  */
 public class Wohnung {
     /**
@@ -62,7 +62,7 @@ public class Wohnung {
     }
 
     /**
-     * Ein Getter für die Adresse der Wohnung.
+     * Ein Getter fuer die Adresse der Wohnung.
      * @return Die Adresse der Wohnungh
      */
     public String getAdresse() {
@@ -70,7 +70,7 @@ public class Wohnung {
     }
 
     /**
-     * Ein Getter für den Mieter der Wohnung.
+     * Ein Getter fuer den Mieter der Wohnung.
      * @return Der Mieter der Wohnung
      */
     public Mieter getMieter() {
@@ -78,7 +78,7 @@ public class Wohnung {
     }
 
     /**
-     * Ein Getter für die Anzahl Stockwerke der Wohnung.
+     * Ein Getter fuer die Anzahl Stockwerke der Wohnung.
      * @return Die Anzahl Stockwerke der Wohnung
      */
     public int getAnzahlStockwerke() {
@@ -86,7 +86,7 @@ public class Wohnung {
     }
 
     /**
-     * Ein Getter für die Anzahl Zimmer der Wohnung.
+     * Ein Getter fuer die Anzahl Zimmer der Wohnung.
      * @return Die Anzahl Zimmer der Wohnung
      */
     public int getAnzahlZimmer() {
@@ -94,7 +94,7 @@ public class Wohnung {
     }
 
     /**
-     * Ein Getter für die Miete der Wohnung.
+     * Ein Getter fuer die Miete der Wohnung.
      * @return Die Miete der Wohnung
      */
     public double getMiete() {
@@ -102,7 +102,7 @@ public class Wohnung {
     }
 
     /**
-     * Ein Getter für das Property, ob die Wohnung frei ist.
+     * Ein Getter fuer das Property, ob die Wohnung frei ist.
      * @return Das Property, ob die Wohnung frei ist
      */
     public boolean isFrei() {
@@ -110,7 +110,7 @@ public class Wohnung {
     }
 
     /**
-     * Ein Getter für die Zimmer der Wohnung.
+     * Ein Getter fuer die Zimmer der Wohnung.
      * @return Die Zimmer der Wohnung
      */
     public ArrayList<Zimmer> getZimmerListe() {
@@ -118,7 +118,7 @@ public class Wohnung {
     }
 
     /**
-     * Ein Getter für ein bestimmtes Zimmer der Wohnung.
+     * Ein Getter fuer ein bestimmtes Zimmer der Wohnung.
      * @param index Der Index des Zimmers
      * @return Das Zimmer der Wohnung
      */
@@ -126,14 +126,14 @@ public class Wohnung {
         if (index < 0) index *= -1;
         if (index >= getAnzahlZimmer()) {
             System.out.println("Diese Wohnung hat nicht so viele Zimmer.");
-            System.out.println("Das Zimmer mit dem Index 0 wird zurückgegeben.");
+            System.out.println("Das Zimmer mit dem Index 0 wird zurueckgegeben.");
             index = 0;
         }
         return getZimmerListe().get(index);
     }
 
     /**
-     * Ein Getter für die Schlafzimmer der Wohnung.
+     * Ein Getter fuer die Schlafzimmer der Wohnung.
      * @return Die Schlafzimmer der Wohnung
      */
     public ArrayList<Schlafzimmer> getSchlafzimmerListe() {
@@ -145,7 +145,7 @@ public class Wohnung {
     }
 
     /**
-     * Ein Getter für die Badezimmer der Wohnung.
+     * Ein Getter fuer die Badezimmer der Wohnung.
      * @return Die Badezimmer der Wohnung
      */
     public ArrayList<Badezimmer> getBadezimmerListe() {
@@ -157,7 +157,7 @@ public class Wohnung {
     }
 
     /**
-     * Ein Getter für die Wohnzimmer der Wohnung.
+     * Ein Getter fuer die Wohnzimmer der Wohnung.
      * @return Die Wohnzimmer der Wohnung
      */
     public ArrayList<Wohnzimmer> getWohnzimmerListe() {
@@ -169,7 +169,7 @@ public class Wohnung {
     }
 
     /**
-     * Ein Setter für die Miete der Wohnung.
+     * Ein Setter fuer die Miete der Wohnung.
      * @param miete Die Miete der Wohnung
      */
     public void setMiete(double miete) {
@@ -178,7 +178,7 @@ public class Wohnung {
     }
 
     /**
-     * Ein Setter für den Mieter der Wohnung.
+     * Ein Setter fuer den Mieter der Wohnung.
      * @param mieter Der Mieter der Wohnung
      */
     public void setMieter(Mieter mieter) {
@@ -187,7 +187,7 @@ public class Wohnung {
     }
 
     /**
-     * Ein Setter für die Adresse der Wohnung.
+     * Ein Setter fuer die Adresse der Wohnung.
      * @param adresse Die Adresse der Wohnung
      */
     private void setAdresse(String adresse) {
@@ -195,12 +195,12 @@ public class Wohnung {
     }
 
     /**
-     * Ein Setter für die Anzahl Zimmer der Wohnung.
+     * Ein Setter fuer die Anzahl Zimmer der Wohnung.
      * @param anzahlZimmer Die Anzahl Zimmer der Wohnung
      */
     private void setAnzahlZimmer(int anzahlZimmer) {
         if (anzahlZimmer < 1) {
-            System.out.println("Eine Wohnung benötigt mindestens ein Zimmer.");
+            System.out.println("Eine Wohnung benoetigt mindestens ein Zimmer.");
             System.out.println("Die Anzahl Zimmer wird auf eins gesetzt");
             anzahlZimmer = 1;
         }
@@ -208,12 +208,12 @@ public class Wohnung {
     }
 
     /**
-     * Ein Setter für die Anzahl Stockwerke der Wohnung.
+     * Ein Setter fuer die Anzahl Stockwerke der Wohnung.
      * @param anzahlStockwerke Die Anzahl Stockwerke der Wohnung
      */
     private void setAnzahlStockwerke(int anzahlStockwerke) {
         if (anzahlStockwerke < 1) {
-            System.out.println("Eine Wohnung benötigt mindestens ein Stockwerk");
+            System.out.println("Eine Wohnung benoetigt mindestens ein Stockwerk");
             System.out.println("Die Anzahl Stockwerke wird auf eins gesetzt");
             anzahlStockwerke = 1;
         }
@@ -221,18 +221,18 @@ public class Wohnung {
     }
 
     /**
-     * Ändert den Typ eines Zimmers, räumt die alten Möbel aus und fügt neue Möbel hinzu.
+     * aendert den Typ eines Zimmers, raeumt die alten Moebel aus und fuegt neue Moebel hinzu.
      * @param index Der Index des Zimmers
      * @param typ Der neue Typ des Zimmers
-     * @param moebelListe Die Liste der Möbel, die in das Zimmer hinzugefügt werden sollen
-     * @return Die Möbel, die aus dem Zimmer entfernt wurden
+     * @param moebelListe Die Liste der Moebel, die in das Zimmer hinzugefuegt werden sollen
+     * @return Die Moebel, die aus dem Zimmer entfernt wurden
      */
     public ArrayList<Moebel> zimmerUmbauen(int index, String typ, ArrayList<Moebel> moebelListe) {
         if (index < 0) index *= -1;
         if (index > getAnzahlZimmer()) {
             System.out.println("Die Wohnung " + getAdresse() + " hat nur " + getAnzahlZimmer() + " Zimmer.");
             System.out.println("Der angegebene Index " + index + " ist zu hoch.");
-            System.out.println("Der Umbau wird nicht durchgeführt.");
+            System.out.println("Der Umbau wird nicht durchgefuehrt.");
             return new ArrayList<>();
         }
         typ = typ.substring(0, 1).toUpperCase() + typ.substring(1);
@@ -268,7 +268,7 @@ public class Wohnung {
                             sonstigeMoebel.remove(moebel);
                         } else {
                             System.out.println("Ein Badezimmer kann nur ein WC haben.");
-                            System.out.println("Alle anderen WCs werden zu den sonstigen Möbeln hinzugefügt");
+                            System.out.println("Alle anderen WCs werden zu den sonstigen Moebeln hinzugefuegt");
                         }
                     } else if (moebel.getClass().equals(Lavabo.class)) {
                         if (lavabo == null) {
@@ -276,7 +276,7 @@ public class Wohnung {
                             sonstigeMoebel.remove(moebel);
                         } else {
                             System.out.println("Ein Badezimmer kann nur ein Lavabo haben.");
-                            System.out.println("Alle anderen Lavabos werden zu den sonstigen Möbeln hinzugefügt");
+                            System.out.println("Alle anderen Lavabos werden zu den sonstigen Moebeln hinzugefuegt");
                         }
                     } else if (moebel.getClass().equals(Dusche.class)) {
                         if (dusche == null) {
@@ -284,7 +284,7 @@ public class Wohnung {
                             sonstigeMoebel.remove(moebel);
                         } else {
                             System.out.println("Ein Badezimmer kann nur eine Dusche haben.");
-                            System.out.println("Alle anderen Duschen werden zu den sonstigen Möbeln hinzugefügt");
+                            System.out.println("Alle anderen Duschen werden zu den sonstigen Moebeln hinzugefuegt");
                         }
                     }
                 }

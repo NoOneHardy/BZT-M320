@@ -1,7 +1,7 @@
 package ch.bztf;
 
 /**
- * Ein Couchtisch ist eine Subklasse von Möbel.
+ * Ein Couchtisch ist eine Subklasse von Moebel.
  */
 public class Couchtisch extends Moebel {
     /**
@@ -14,14 +14,14 @@ public class Couchtisch extends Moebel {
     private boolean dekoriert;
 
     /**
-     * Erstellt einen Couchtisch bzw. ein Möbel vom Typ Couchtisch.
+     * Erstellt einen Couchtisch bzw. ein Moebel vom Typ Couchtisch.
      */
     public Couchtisch() {
         super("Couchtisch");
     }
 
     /**
-     * Ein Getter für die Form des Couchtisches.
+     * Ein Getter fuer die Form des Couchtisches.
      * @return Die Form des Couchtisches
      */
     public String getForm() {
@@ -29,7 +29,7 @@ public class Couchtisch extends Moebel {
     }
 
     /**
-     * Ein Getter für das Property ob der Couchtisch dekoriert ist.
+     * Ein Getter fuer das Property ob der Couchtisch dekoriert ist.
      * @return Boolean ob der Couchtisch dekoriert ist
      */
     public boolean isDekoriert() {
@@ -37,7 +37,7 @@ public class Couchtisch extends Moebel {
     }
 
     /**
-     * Ein Setter für die Form des Couchtisches.
+     * Ein Setter fuer die Form des Couchtisches.
      * @param form Die Form des Couchtisches
      */
     public void setForm(String form) {
@@ -45,7 +45,7 @@ public class Couchtisch extends Moebel {
     }
 
     /**
-     * Ein Setter für das Property ob der Couchtisch dekoriert ist.
+     * Ein Setter fuer das Property ob der Couchtisch dekoriert ist.
      * @param dekoriert Boolean ob der Couchtisch dekoriert ist
      */
     private void setDekoriert(boolean dekoriert) {

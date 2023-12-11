@@ -14,14 +14,14 @@ public class WC extends Moebel {
     private boolean benutzt;
 
     /**
-     * Erstellt ein WC bzw. ein Möbel vom Typ WC.
+     * Erstellt ein WC bzw. ein Moebel vom Typ WC.
      */
     public WC() {
         super("WC");
     }
 
     /**
-     * Ein Getter für das Property, ob das WC elektrisch ist.
+     * Ein Getter fuer das Property, ob das WC elektrisch ist.
      * @return Das Property, ob das WC elektrisch ist
      */
     public boolean isElektrisch() {
@@ -29,7 +29,7 @@ public class WC extends Moebel {
     }
 
     /**
-     * Ein Getter für das Property, ob das WC benutzt wurde.
+     * Ein Getter fuer das Property, ob das WC benutzt wurde.
      * @return Das Property, ob das WC benutzt wurde
      */
     public boolean isBenutzt() {
@@ -37,7 +37,7 @@ public class WC extends Moebel {
     }
 
     /**
-     * Ein Setter für das Property, ob das WC elektrisch ist.
+     * Ein Setter fuer das Property, ob das WC elektrisch ist.
      * @param elektrisch Das Property, ob das WC elektrisch ist
      */
     public void setElektrisch(boolean elektrisch) {
@@ -46,7 +46,7 @@ public class WC extends Moebel {
     }
 
     /**
-     * Ein Setter für das Property, ob das WC benutzt wurde.
+     * Ein Setter fuer das Property, ob das WC benutzt wurde.
      * @param benutzt Das Property, ob das WC benutzt wurde
      */
     private void setBenutzt(boolean benutzt) {
@@ -54,7 +54,7 @@ public class WC extends Moebel {
     }
 
     /**
-     * Setzt das Property, ob das WC benutzt wurde, auf true und spült es, falls es elektrisch ist.
+     * Setzt das Property, ob das WC benutzt wurde, auf true und spuelt es, falls es elektrisch ist.
      */
     public void benutzen() {
         setBenutzt(true);

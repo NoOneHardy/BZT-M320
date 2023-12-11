@@ -1,11 +1,11 @@
 package ch.bztf;
 
 /**
- * Eine Dusche ist eine Subklasse von Möbel.
+ * Eine Dusche ist eine Subklasse von Moebel.
  */
 public class Dusche extends Moebel {
     /**
-     * Der Türtyp der Dusche
+     * Der Tuertyp der Dusche
      */
     private String tuerTyp;
     /**
@@ -14,22 +14,22 @@ public class Dusche extends Moebel {
     private boolean transparent;
 
     /**
-     * Erstellt eine Dusche bzw. ein Möbel vom Typ Dusche.
+     * Erstellt eine Dusche bzw. ein Moebel vom Typ Dusche.
      */
     public Dusche() {
         super("Dusche");
     }
 
     /**
-     * Ein Getter für den Türtyp der Dusche.
-     * @return Der Türtyp der Dusche
+     * Ein Getter fuer den Tuertyp der Dusche.
+     * @return Der Tuertyp der Dusche
      */
     public String getTuerTyp() {
         return tuerTyp;
     }
 
     /**
-     * Ein Getter für das Property ob die Dusche transparent ist.
+     * Ein Getter fuer das Property ob die Dusche transparent ist.
      * @return Boolean ob die Dusche transparent ist
      */
     public boolean isTransparent() {
@@ -37,15 +37,15 @@ public class Dusche extends Moebel {
     }
 
     /**
-     * Ein Setter für den Türtyp der Dusche.
-     * @param tuerTyp Der Türtyp der Dusche
+     * Ein Setter fuer den Tuertyp der Dusche.
+     * @param tuerTyp Der Tuertyp der Dusche
      */
     public void setTuerTyp(String tuerTyp) {
         this.tuerTyp = tuerTyp;
     }
 
     /**
-     * Ein Setter für das Property ob die Dusche transparent ist.
+     * Ein Setter fuer das Property ob die Dusche transparent ist.
      * @param transparent Boolean ob die Dusche transparent ist
      */
     public void setTransparent(boolean transparent) {
@@ -58,7 +58,7 @@ public class Dusche extends Moebel {
     @Override
     public void ausgabe() {
         super.ausgabe();
-        System.out.println("\tTürtyp: " + (getTuerTyp() == null ? "Unbekannt" : getTuerTyp()));
+        System.out.println("\tTuertyp: " + (getTuerTyp() == null ? "Unbekannt" : getTuerTyp()));
         System.out.println("\tTransparent: " + (isTransparent() ? "Ja" : "Nein"));
         System.out.println();
     }

@@ -5,7 +5,7 @@ package ch.bztf;
  */
 public class Sofa extends Moebel {
     /**
-     * Die Anzahl Plätze des Sofas
+     * Die Anzahl Plaetze des Sofas
      */
     private int plaetze = 2;
     /**
@@ -14,22 +14,22 @@ public class Sofa extends Moebel {
     private boolean ecksofa;
 
     /**
-     * Erstellt ein Sofa bzw. ein Möbel vom Typ Sofa.
+     * Erstellt ein Sofa bzw. ein Moebel vom Typ Sofa.
      */
     public Sofa() {
         super("Sofa");
     }
 
     /**
-     * Ein Getter für die Anzahl Plätze des Sofas.
-     * @return Die Anzahl Plätze des Sofas
+     * Ein Getter fuer die Anzahl Plaetze des Sofas.
+     * @return Die Anzahl Plaetze des Sofas
      */
     public int getPlaetze() {
         return plaetze;
     }
 
     /**
-     * Ein Getter für das Property, ob das Sofa ein Ecksofa ist.
+     * Ein Getter fuer das Property, ob das Sofa ein Ecksofa ist.
      * @return Das Property, ob das Sofa ein Ecksofa ist
      */
     public boolean isEcksofa() {
@@ -37,15 +37,15 @@ public class Sofa extends Moebel {
     }
 
     /**
-     * Ein Setter für die Anzahl Plätze des Sofas.
-     * @param plaetze Die Anzahl Plätze des Sofas
+     * Ein Setter fuer die Anzahl Plaetze des Sofas.
+     * @param plaetze Die Anzahl Plaetze des Sofas
      */
     public void setPlaetze(int plaetze) {
         this.plaetze = plaetze;
     }
 
     /**
-     * Ein Setter für das Property, ob das Sofa ein Ecksofa ist.
+     * Ein Setter fuer das Property, ob das Sofa ein Ecksofa ist.
      * @param ecksofa Das Property, ob das Sofa ein Ecksofa ist
      */
     public void setEcksofa(boolean ecksofa) {
@@ -58,7 +58,7 @@ public class Sofa extends Moebel {
     @Override
     public void ausgabe() {
         super.ausgabe();
-        System.out.println("\tPlätze: " + getPlaetze());
+        System.out.println("\tPlaetze: " + getPlaetze());
         System.out.println("\tEcksofa: " + (isEcksofa() ? "Ja" : "Nein"));
         System.out.println();
     }

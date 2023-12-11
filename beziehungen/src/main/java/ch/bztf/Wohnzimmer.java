@@ -52,7 +52,7 @@ public class Wohnzimmer extends Zimmer {
     }
 
     /**
-     * Gibt die Sofas des Wohnzimmers zurück.
+     * Gibt die Sofas des Wohnzimmers zurueck.
      * @return Die Sofas des Wohnzimmers
      */
     public ArrayList<Sofa> getSofas() {
@@ -60,7 +60,7 @@ public class Wohnzimmer extends Zimmer {
     }
 
     /**
-     * Gibt die Couchtische des Wohnzimmers zurück.
+     * Gibt die Couchtische des Wohnzimmers zurueck.
      * @return Die Couchtische des Wohnzimmers
      */
     public ArrayList<Couchtisch> getCouchtische() {
@@ -68,7 +68,7 @@ public class Wohnzimmer extends Zimmer {
     }
 
     /**
-     * Gibt die maximale Anzahl Sofas des Wohnzimmers zurück.
+     * Gibt die maximale Anzahl Sofas des Wohnzimmers zurueck.
      * @return Die maximale Anzahl Sofas des Wohnzimmers
      */
     public int getMaxSofas() {
@@ -76,7 +76,7 @@ public class Wohnzimmer extends Zimmer {
     }
 
     /**
-     * Gibt die maximale Anzahl Couchtische des Wohnzimmers zurück.
+     * Gibt die maximale Anzahl Couchtische des Wohnzimmers zurueck.
      * @return Die maximale Anzahl Couchtische des Wohnzimmers
      */
     public int getMaxCouchtische() {
@@ -100,8 +100,8 @@ public class Wohnzimmer extends Zimmer {
     }
 
     /**
-     * Fügt dem Wohnzimmer ein Sofa hinzu.
-     * @param sofa Das Sofa, welches dem Wohnzimmer hinzugefügt werden soll
+     * Fuegt dem Wohnzimmer ein Sofa hinzu.
+     * @param sofa Das Sofa, welches dem Wohnzimmer hinzugefuegt werden soll
      */
     public void sofaHinzufuegen(Sofa sofa) {
         if (!sofas.contains(sofa)) {
@@ -130,7 +130,7 @@ public class Wohnzimmer extends Zimmer {
                 sofas.remove(sofa);
                 moebelEntfernen(sofa);
             } else {
-                System.out.println("Ein Wohnzimmer benötigt mindestens ein Sofa");
+                System.out.println("Ein Wohnzimmer benoetigt mindestens ein Sofa");
             }
         } else {
             System.out.println("Das Sofa befindet sich nicht in diesem Zimmer.");
@@ -138,8 +138,8 @@ public class Wohnzimmer extends Zimmer {
     }
 
     /**
-     * Fügt dem Wohnzimmer einen Couchtisch hinzu.
-     * @param couchtisch Der Couchtisch, welcher dem Wohnzimmer hinzugefügt werden soll
+     * Fuegt dem Wohnzimmer einen Couchtisch hinzu.
+     * @param couchtisch Der Couchtisch, welcher dem Wohnzimmer hinzugefuegt werden soll
      */
     public void couchtischHinzufuegen(Couchtisch couchtisch) {
         if (!couchtische.contains(couchtisch)) {
@@ -168,7 +168,7 @@ public class Wohnzimmer extends Zimmer {
                 couchtische.remove(couchtisch);
                 moebelEntfernen(couchtisch);
             } else {
-                System.out.println("Ein Wohnzimmer benötigt mindestens einen Couchtisch");
+                System.out.println("Ein Wohnzimmer benoetigt mindestens einen Couchtisch");
             }
         } else {
             System.out.println("Der Couchtisch befindet sich nicht in diesem Zimmer.");

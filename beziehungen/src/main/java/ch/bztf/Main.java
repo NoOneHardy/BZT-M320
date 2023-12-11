@@ -109,8 +109,8 @@ public class Main {
 
         ArrayList<Moebel> bueroMoebel = new ArrayList<>();
         bueroMoebel.add(new Moebel("Schreibtisch"));
-        bueroMoebel.add(new Moebel("Bürostuhl"));
-        rebenWeg12.zimmerUmbauen(4, "Büro", bueroMoebel);
+        bueroMoebel.add(new Moebel("Buerostuhl"));
+        rebenWeg12.zimmerUmbauen(4, "Buero", bueroMoebel);
 
         rebenWeg13.zimmerUmbauen(-100, "Wohnzimmer", new ArrayList<>());
         // ENDE - Test Wohnung
@@ -134,7 +134,7 @@ public class Main {
 
         // START - Test Dusche
         dusche1.setTransparent(true);
-        dusche1.setTuerTyp("Schiebetür");
+        dusche1.setTuerTyp("Schiebetuer");
         // ENDE - Test Dusche
 
         // START - Test Lavabo

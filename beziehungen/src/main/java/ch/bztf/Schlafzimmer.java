@@ -34,7 +34,7 @@ public class Schlafzimmer extends Zimmer {
     }
 
     /**
-     * Gibt die Betten des Schlafzimmers zurück.
+     * Gibt die Betten des Schlafzimmers zurueck.
      * @return Die Betten des Schlafzimmers
      */
     public ArrayList<Bett> getBetten() {
@@ -42,7 +42,7 @@ public class Schlafzimmer extends Zimmer {
     }
 
     /**
-     * Gibt die maximale Anzahl Betten des Schlafzimmers zurück.
+     * Gibt die maximale Anzahl Betten des Schlafzimmers zurueck.
      * @return Die maximale Anzahl Betten des Schlafzimmers
      */
     public int getMaxBetten() {
@@ -58,8 +58,8 @@ public class Schlafzimmer extends Zimmer {
     }
 
     /**
-     * Fügt ein Bett dem Schlafzimmer hinzu.
-     * @param bett Das Bett, welches dem Schlafzimmer hinzugefügt werden soll
+     * Fuegt ein Bett dem Schlafzimmer hinzu.
+     * @param bett Das Bett, welches dem Schlafzimmer hinzugefuegt werden soll
      */
     public void bettHinzufuegen(Bett bett) {
         if (!betten.contains(bett)) {
@@ -88,7 +88,7 @@ public class Schlafzimmer extends Zimmer {
                 betten.remove(bett);
                 moebelEntfernen(bett);
             } else {
-                System.out.println("Ein Schlafzimmer benötigt mindestens ein Bett.");
+                System.out.println("Ein Schlafzimmer benoetigt mindestens ein Bett.");
             }
         } else {
             System.out.println("Das Bett befindet sich nicht in diesem Zimmer.");

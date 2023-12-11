@@ -1,7 +1,7 @@
 package ch.bztf;
 
 /**
- * Ein Lavabo ist eine Subklasse von Möbel.
+ * Ein Lavabo ist eine Subklasse von Moebel.
  */
 public class Lavabo extends Moebel {
     /**
@@ -9,19 +9,19 @@ public class Lavabo extends Moebel {
      */
     private String form;
     /**
-     * Die Anzahl Hähne des Lavabos
+     * Die Anzahl Haehne des Lavabos
      */
     private int anzahlHaehne = 1;
 
     /**
-     * Erstellt ein Lavabo bzw. ein Möbel vom Typ Lavabo.
+     * Erstellt ein Lavabo bzw. ein Moebel vom Typ Lavabo.
      */
     public Lavabo() {
         super("Lavabo");
     }
 
     /**
-     * Ein Getter für die Form des Lavabos.
+     * Ein Getter fuer die Form des Lavabos.
      * @return Die Form des Lavabos
      */
     public String getForm() {
@@ -29,15 +29,15 @@ public class Lavabo extends Moebel {
     }
 
     /**
-     * Ein Getter für die Anzahl Hähne des Lavabos.
-     * @return Die Anzahl Hähne des Lavabos
+     * Ein Getter fuer die Anzahl Haehne des Lavabos.
+     * @return Die Anzahl Haehne des Lavabos
      */
     public int getAnzahlHaehne() {
         return anzahlHaehne;
     }
 
     /**
-     * Ein Setter für die Form des Lavabos.
+     * Ein Setter fuer die Form des Lavabos.
      * @param form Die Form des Lavabos
      */
     public void setForm(String form) {
@@ -45,8 +45,8 @@ public class Lavabo extends Moebel {
     }
 
     /**
-     * Ein Setter für die Anzahl Hähne des Lavabos.
-     * @param anzahlHaehne Die Anzahl Hähne des Lavabos
+     * Ein Setter fuer die Anzahl Haehne des Lavabos.
+     * @param anzahlHaehne Die Anzahl Haehne des Lavabos
      */
     public void setAnzahlHaehne(int anzahlHaehne) {
         this.anzahlHaehne = anzahlHaehne;
@@ -59,7 +59,7 @@ public class Lavabo extends Moebel {
     public void ausgabe() {
         super.ausgabe();
         System.out.println("\tForm: " + (getForm() == null ? "Unbekannt" : getForm()));
-        System.out.println("\tAnzahl Hähne: " + getAnzahlHaehne());
+        System.out.println("\tAnzahl Haehne: " + getAnzahlHaehne());
         System.out.println();
     }
 }
