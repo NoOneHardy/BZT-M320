@@ -11,10 +11,6 @@ participant Main
 participant "Wohnung1:Wohnung"
 participant "Zimmer0:Zimmer"
 participant Moebel
-participant "Schlafzimmer0:Schlafzimmer"
-participant "Badezimmer0:Badezimmer"
-participant "Wohnzimmer0:Wohnzimmer"
-participant "Zimmer1:Zimmer"
 
 Main -> "Wohnung1:Wohnung" : zimmerUmbauen(0, "Schlafzimmer", schlafzimmerMoebel)
 /'schlafzimmerMoebel = [Bett bett1, Bett bett2, Moebel spiegel]'/
@@ -26,6 +22,7 @@ loop for (Moebel moebel : zimmer.moebelListe)
     "Zimmer0:Zimmer" -> Moebel : ausZimmerNehmen()
 end
 alt typ == "Schlafzimmer"
+create "Schlafzimmer0:Schlafzimmer"
 "Wohnung1:Wohnung" -> "Schlafzimmer0:Schlafzimmer" : new Schlafzimmer(betten)
 "Schlafzimmer0:Schlafzimmer" -> Zimmer : super()
 Zimmer -> Zimmer : setTyp("Schlafzimmer")
@@ -34,6 +31,7 @@ loop for (Bett bett : schlafzimmer0.betten)
 "Schlafzimmer0:Schlafzimmer" -> "Schlafzimmer0:Schlafzimmer" : bettHinzufuegen(bett)
 end
 else typ == "Badezimmer"
+create "Badezimmer0:Badezimmer"
 "Wohnung1:Wohnung" -> "Badezimmer0:Badezimmer" : new Badezimmer(wc, dusche, lavabo)
 "Badezimmer0:Badezimmer" -> Zimmer : super()
 Zimmer -> Zimmer : setTyp("Badezimmer")
@@ -41,6 +39,7 @@ Zimmer -> Zimmer : setTyp("Badezimmer")
 "Badezimmer0:Badezimmer" -> "Badezimmer0:Badezimmer" : setDusche(dusche)
 "Badezimmer0:Badezimmer" -> "Badezimmer0:Badezimmer" : setLavabo(lavabo)
 else typ == "Wohnzimmer"
+create "Wohnzimmer0:Wohnzimmer"
 "Wohnung1:Wohnung" -> "Wohnzimmer0:Wohnzimmer" : new Wohnzimmer(sofas, couchtische)
 "Wohnzimmer0:Wohnzimmer" -> Zimmer : super()
 Zimmer -> Zimmer : setTyp("Wohnzimmer")
@@ -53,6 +52,7 @@ loop for (Sofa sofa : wohnzimmer0.sofas)
 "Wohnzimmer0:Wohnzimmer" -> "Wohnzimmer0:Wohnzimmer" : sofaHinzufuegen(sofa)"
 end
 else
+create "Zimmer1:Zimmer"
 "Wohnung1:Wohnung" -> "Zimmer1:Zimmer" : new Zimmer()
 "Wohnung1:Wohnung" -> "Zimmer1:Zimmer" : setTyp(typ)
 end

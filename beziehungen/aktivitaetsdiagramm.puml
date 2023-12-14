@@ -1,0 +1,55 @@
+@startuml
+title Wohnung umbauen
+
+start
+
+:Zimmer in der Wohnung1 wird umgebaut;
+
+if (Existiert kein Zimmer mit dieser Zimmernummer?) then
+:Ja;
+:Umbau abbrechen;
+stop
+end if
+
+if (Ist das Zimmer schon von dem Typ von dem es sein soll?) then
+:Ja;
+:Umbau abbrechen;
+stop
+end if
+
+while (Sind noch Moebel im Zimmer?)
+  :Moebel entfernen;
+endwhile
+
+if (Soll das Zimmer ein Schlafzimmer werden?) then
+:Neues Zimmer vom Typ Schlafzimmer erstellen;
+:Die maximale Anzahl Betten für dieses Zimmer auf\n die Anzahl Betten stellen die mitgegeben wurden;
+while (Kommen noch Betten ins Schlafzimmer?)
+  :Bett ins Schlafzimmer stellen;
+endwhile
+else if (Soll das Zimmer ein Badezimmer werden?) then
+:Neues Zimmer vom Typ Badezimmer erstellen;
+:Wc ins Badezimmer stellen;
+:Dusche ins Badezimmer stellen;
+:Lavabo ins Badezimmer stellen;
+else if (Soll das Zimmer ein Wohnzimmer werden?) then
+:Neues Zimmer vom Typ Wohnzimmer erstellen;
+:Die maximale Anzahl Couchtische für dieses Zimmer auf\n die Anzahl Couchtische setzen, die mitgegeben wurden;
+:Die maximale Anzahl Sofas für dieses Zimmer auf\n die Anzahl Sofas setzen, die mitgegeben wurden;
+while (Kommen noch Couchtische ins Wohnzimmer?)
+  :Couchtisch ins Wohnzimmer stellen;
+endwhile
+while (Kommen noch Sofas ins Wohnzimmer?)
+  :Sofa ins Wohnzimmer stellen;
+endwhile
+else
+:Neues Zimmer vom mitgegebenen Typ erstellen;
+endif
+while (Kommen noch Moebel in das Zimmer?)
+  :Moebel ins Zimmer stellen;
+endwhile
+:Anzahl Lampen im Zimmer auf die Anzahl\n Lampen des alten Zimmers setzen;
+:Das Licht ausschalten;
+:Anzahl Fenster im Zimmer auf die Anzahl\n Fenster des alten Zimmers setzen;
+end
+@enduml
