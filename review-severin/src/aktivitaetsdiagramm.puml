@@ -1,0 +1,38 @@
+@startuml
+!theme aws-orange
+
+
+|Benutzer|
+start
+:Benutzer Passwort eingeben;
+repeat
+  :Passwort wird eingegeben --> Password1;
+  :Passwort bestätigen --> Password2;
+backward: Passwörter stimmen nicht überein.;
+repeat while (Password1 != Password2)
+
+:Benutzer wird einer SharedList hinzugefügt;
+
+if (Benutzer wurde gefunden?) then (ja)
+:Benutzer der SharedList hinzufügen;
+:SharedList dem Benutzer hinzufügen;
+
+:Task erstellen mit Beschreibung, Priorität & Titel;
+if (Task mit Bild?) then (ja)
+:Bild hinzufügen;
+
+else (nein)
+:Bild auf null lassen;
+
+endif
+
+
+else (nein)
+:Benutzerzuweisung fehlgeschlagen!;
+
+endif
+
+|Benutzer|
+stop
+
+@enduml

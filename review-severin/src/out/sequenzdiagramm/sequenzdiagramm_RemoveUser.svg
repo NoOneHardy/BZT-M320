@@ -1,0 +1,496 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" contentStyleType="text/css" height="471.875px" preserveAspectRatio="none" style="width:652px;height:471px;background:#00000000;" version="1.1" viewBox="0 0 652 471" width="652.0833px" zoomAndPan="magnify"><defs><linearGradient id="gb19k8kuftep30" x1="50%" x2="50%" y1="0%" y2="100%"><stop offset="0%" stop-color="#FFFFFF"/><stop offset="100%" stop-color="#EEEEEE"/></linearGradient><linearGradient id="gb19k8kuftep31" x1="50%" x2="50%" y1="0%" y2="100%"><stop offset="0%" stop-color="#F18E3E"/><stop offset="100%" stop-color="#EC7211"/></linearGradient></defs><g><rect fill="url(#gb19k8kuftep30)" height="47.0378" id="_title" rx="4.1667" ry="4.1667" style="stroke:#EEEEEE;stroke-width:1.0416666666666667;" width="339.5833" x="176.3021" y="10.4167"/><text fill="#EC7211" font-family="&quot;Verdana&quot;" font-size="20.8333" font-weight="bold" lengthAdjust="spacing" textLength="318.75" x="186.7188" y="42.4601">Sequenzdiagramm Remove User</text><rect fill="#8191A3" height="301.6276" style="stroke:#ABB6C2;stroke-width:1.0416666666666667;" width="10.4167" x="67.7083" y="115.8854"/><rect fill="#8191A3" height="259.8633" style="stroke:#ABB6C2;stroke-width:1.0416666666666667;" width="10.4167" x="247.9167" y="148.2747"/><rect fill="#8191A3" height="150.293" style="stroke:#ABB6C2;stroke-width:1.0416666666666667;" width="10.4167" x="422.9167" y="188.9974"/><rect fill="#8191A3" height="40.7227" style="stroke:#ABB6C2;stroke-width:1.0416666666666667;" width="10.4167" x="605.2083" y="283.9844"/><line style="stroke:#ABB6C2;stroke-width:0.5208333333333334;stroke-dasharray:5.0,5.0;" x1="72.9167" x2="72.9167" y1="105.4688" y2="426.888"/><line style="stroke:#ABB6C2;stroke-width:0.5208333333333334;stroke-dasharray:5.0,5.0;" x1="253.125" x2="253.125" y1="105.4688" y2="426.888"/><line style="stroke:#ABB6C2;stroke-width:0.5208333333333334;stroke-dasharray:5.0,5.0;" x1="428.125" x2="428.125" y1="105.4688" y2="426.888"/><line style="stroke:#ABB6C2;stroke-width:0.5208333333333334;stroke-dasharray:5.0,5.0;" x1="609.8958" x2="609.8958" y1="105.4688" y2="426.888"/><rect fill="url(#gb19k8kuftep31)" height="40.7227" rx="4.1667" ry="4.1667" style="stroke:#EC7211;stroke-width:0.5208333333333334;" width="52.0833" x="46.875" y="63.7044"/><text fill="#FFFFFF" font-family="&quot;Verdana&quot;" font-size="12.5" lengthAdjust="spacing" textLength="27.0833" x="59.375" y="89.1805">Main</text><rect fill="url(#gb19k8kuftep31)" height="40.7227" rx="4.1667" ry="4.1667" style="stroke:#EC7211;stroke-width:0.5208333333333334;" width="52.0833" x="46.875" y="425.8464"/><text fill="#FFFFFF" font-family="&quot;Verdana&quot;" font-size="12.5" lengthAdjust="spacing" textLength="27.0833" x="59.375" y="451.3224">Main</text><rect fill="url(#gb19k8kuftep31)" height="40.7227" rx="4.1667" ry="4.1667" style="stroke:#EC7211;stroke-width:0.5208333333333334;" width="87.5" x="209.375" y="63.7044"/><text fill="#FFFFFF" font-family="&quot;Verdana&quot;" font-size="12.5" lengthAdjust="spacing" textLength="62.5" x="221.875" y="89.1805">SharedList</text><rect fill="url(#gb19k8kuftep31)" height="40.7227" rx="4.1667" ry="4.1667" style="stroke:#EC7211;stroke-width:0.5208333333333334;" width="87.5" x="209.375" y="425.8464"/><text fill="#FFFFFF" font-family="&quot;Verdana&quot;" font-size="12.5" lengthAdjust="spacing" textLength="62.5" x="221.875" y="451.3224">SharedList</text><rect fill="url(#gb19k8kuftep31)" height="40.7227" rx="4.1667" ry="4.1667" style="stroke:#EC7211;stroke-width:0.5208333333333334;" width="75" x="390.625" y="63.7044"/><text fill="#FFFFFF" font-family="&quot;Verdana&quot;" font-size="12.5" lengthAdjust="spacing" textLength="50" x="403.125" y="89.1805">Benutzer</text><rect fill="url(#gb19k8kuftep31)" height="40.7227" rx="4.1667" ry="4.1667" style="stroke:#EC7211;stroke-width:0.5208333333333334;" width="75" x="390.625" y="425.8464"/><text fill="#FFFFFF" font-family="&quot;Verdana&quot;" font-size="12.5" lengthAdjust="spacing" textLength="50" x="403.125" y="451.3224">Benutzer</text><rect fill="url(#gb19k8kuftep31)" height="40.7227" rx="4.1667" ry="4.1667" style="stroke:#EC7211;stroke-width:0.5208333333333334;" width="71.875" x="574.4792" y="63.7044"/><text fill="#FFFFFF" font-family="&quot;Verdana&quot;" font-size="12.5" lengthAdjust="spacing" textLength="46.875" x="586.9792" y="89.1805">Aufgabe</text><rect fill="url(#gb19k8kuftep31)" height="40.7227" rx="4.1667" ry="4.1667" style="stroke:#EC7211;stroke-width:0.5208333333333334;" width="71.875" x="574.4792" y="425.8464"/><text fill="#FFFFFF" font-family="&quot;Verdana&quot;" font-size="12.5" lengthAdjust="spacing" textLength="46.875" x="586.9792" y="451.3224">Aufgabe</text><rect fill="#8191A3" height="301.6276" style="stroke:#ABB6C2;stroke-width:1.0416666666666667;" width="10.4167" x="67.7083" y="115.8854"/><rect fill="#8191A3" height="259.8633" style="stroke:#ABB6C2;stroke-width:1.0416666666666667;" width="10.4167" x="247.9167" y="148.2747"/><rect fill="#8191A3" height="150.293" style="stroke:#ABB6C2;stroke-width:1.0416666666666667;" width="10.4167" x="422.9167" y="188.9974"/><rect fill="#8191A3" height="40.7227" style="stroke:#ABB6C2;stroke-width:1.0416666666666667;" width="10.4167" x="605.2083" y="283.9844"/><polygon fill="#EC7211" points="235.4167,144.1081,245.8333,148.2747,235.4167,152.4414,239.5833,148.2747" style="stroke:#EC7211;stroke-width:1.0416666666666667;"/><line style="stroke:#EC7211;stroke-width:3.125;stroke-dasharray:2.0,2.0;" x1="78.125" x2="241.6667" y1="148.2747" y2="148.2747"/><text fill="#4E5D6C" font-family="&quot;Verdana&quot;" font-size="12.5" lengthAdjust="spacing" textLength="139.5833" x="90.625" y="138.2365">removeBenutzer(userID)</text><polygon fill="#EC7211" points="410.4167,184.8307,420.8333,188.9974,410.4167,193.1641,414.5833,188.9974" style="stroke:#EC7211;stroke-width:1.0416666666666667;"/><line style="stroke:#EC7211;stroke-width:3.125;stroke-dasharray:2.0,2.0;" x1="258.3333" x2="416.6667" y1="188.9974" y2="188.9974"/><text fill="#4E5D6C" font-family="&quot;Verdana&quot;" font-size="12.5" lengthAdjust="spacing" textLength="134.375" x="270.8333" y="178.9591">unlinkSharedList(listID)</text><line style="stroke:#EC7211;stroke-width:3.125;stroke-dasharray:2.0,2.0;" x1="433.3333" x2="477.0833" y1="229.7201" y2="229.7201"/><line style="stroke:#EC7211;stroke-width:3.125;stroke-dasharray:2.0,2.0;" x1="477.0833" x2="477.0833" y1="229.7201" y2="243.2617"/><line style="stroke:#EC7211;stroke-width:3.125;stroke-dasharray:2.0,2.0;" x1="434.375" x2="477.0833" y1="243.2617" y2="243.2617"/><polygon fill="#EC7211" points="444.7917,239.0951,434.375,243.2617,444.7917,247.4284,440.625,243.2617" style="stroke:#EC7211;stroke-width:1.0416666666666667;"/><text fill="#4E5D6C" font-family="&quot;Verdana&quot;" font-size="12.5" lengthAdjust="spacing" textLength="80.2083" x="445.8333" y="219.6818">remove(listID)</text><polygon fill="#EC7211" points="592.7083,279.8177,603.125,283.9844,592.7083,288.151,596.875,283.9844" style="stroke:#EC7211;stroke-width:1.0416666666666667;"/><line style="stroke:#EC7211;stroke-width:3.125;stroke-dasharray:2.0,2.0;" x1="433.3333" x2="598.9583" y1="283.9844" y2="283.9844"/><text fill="#4E5D6C" font-family="&quot;Verdana&quot;" font-size="12.5" lengthAdjust="spacing" textLength="136.4583" x="445.8333" y="273.9461">(automatically removed)</text><polygon fill="#EC7211" points="444.7917,320.5404,434.375,324.707,444.7917,328.8737,440.625,324.707" style="stroke:#EC7211;stroke-width:1.0416666666666667;"/><line style="stroke:#EC7211;stroke-width:3.125;stroke-dasharray:2.0,2.0;" x1="438.5417" x2="609.375" y1="324.707" y2="324.707"/><text fill="#4E5D6C" font-family="&quot;Verdana&quot;" font-size="12.5" lengthAdjust="spacing" textLength="136.4583" x="456.25" y="314.6688">(Java garbage collector)</text><polygon fill="#EC7211" points="269.7917,335.1237,259.375,339.2904,269.7917,343.457,265.625,339.2904" style="stroke:#EC7211;stroke-width:1.0416666666666667;"/><line style="stroke:#EC7211;stroke-width:3.125;stroke-dasharray:2.0,2.0;" x1="263.5417" x2="427.0833" y1="339.2904" y2="339.2904"/><line style="stroke:#EC7211;stroke-width:3.125;stroke-dasharray:2.0,2.0;" x1="258.3333" x2="302.0833" y1="380.013" y2="380.013"/><line style="stroke:#EC7211;stroke-width:3.125;stroke-dasharray:2.0,2.0;" x1="302.0833" x2="302.0833" y1="380.013" y2="393.5547"/><line style="stroke:#EC7211;stroke-width:3.125;stroke-dasharray:2.0,2.0;" x1="259.375" x2="302.0833" y1="393.5547" y2="393.5547"/><polygon fill="#EC7211" points="269.7917,389.388,259.375,393.5547,269.7917,397.7214,265.625,393.5547" style="stroke:#EC7211;stroke-width:1.0416666666666667;"/><text fill="#4E5D6C" font-family="&quot;Verdana&quot;" font-size="12.5" lengthAdjust="spacing" textLength="89.5833" x="270.8333" y="369.9748">remove(userID)</text><polygon fill="#EC7211" points="89.5833,403.9714,79.1667,408.138,89.5833,412.3047,85.4167,408.138" style="stroke:#EC7211;stroke-width:1.0416666666666667;"/><line style="stroke:#EC7211;stroke-width:3.125;stroke-dasharray:2.0,2.0;" x1="83.3333" x2="252.0833" y1="408.138" y2="408.138"/><!--MD5=[a42139a69b00f191f9636a2bfe007a65]
+@startuml
+!theme aws-orange
+
+participant Main
+participant SharedList
+participant Benutzer
+participant Aufgabe
+
+title Sequenzdiagramm Remove User
+
+activate Main
+
+Main - -> SharedList : removeBenutzer(userID)
+activate SharedList
+
+SharedList - -> Benutzer : unlinkSharedList(listID)
+activate Benutzer
+Benutzer - -> Benutzer : remove(listID)
+
+Benutzer - -> Aufgabe : (automatically removed)
+activate Aufgabe
+Aufgabe - -> Benutzer : (Java garbage collector)
+deactivate Aufgabe
+
+Benutzer - -> SharedList
+deactivate Benutzer
+
+SharedList - -> SharedList : remove(userID)
+
+SharedList - -> Main
+deactivate SharedList
+
+@enduml
+
+@startuml
+skinparam BackgroundColor transparent
+skinparam useBetaStyle false
+    !assume transparent light
+skinparam defaultFontName       "Verdana"
+skinparam defaultFontSize       12
+skinparam dpi                   100
+skinparam shadowing             false
+skinparam roundcorner           8
+skinparam ParticipantPadding    40
+skinparam BoxPadding            40
+skinparam Padding               5
+skinparam ArrowColor            #4E5D6C
+skinparam stereotype {
+    CBackgroundColor ffffff
+    CBorderColor #BEBEBE
+    ABackgroundColor #239B02
+    ABorderColor #176702
+    IBackgroundColor #EC4624
+    IBorderColor #A7280E
+    EBackgroundColor #F18E3E
+    EBorderColor #BD5B0E
+    NBackgroundColor #008AE0
+    NBorderColor #005C96
+}
+skinparam title {
+	FontSize	    	         20
+	BorderRoundCorner            8
+	BorderThickness 	         1
+	BackgroundColor  ffffff-#eeeeee
+	FontColor #EC7211
+	BorderColor #eeeeee
+}
+
+skinparam legend {
+    		FontColor #4E5D6C
+		BorderColor #BEBEBE
+		BackgroundColor ffffff-#eeeeee
+    BackgroundColor transparent
+}
+
+skinparam swimlane {
+	BorderColor #0073bb
+	BorderThickness 2
+	TitleBackgroundColor  ffffff-#eeeeee
+	TitleFontColor #EC7211
+}
+
+
+skinparam activity {
+			FontColor #FFF
+		BorderColor #EC7211
+		BackgroundColor #F18E3E-#EC7211
+	BarColor #1D8102
+	StartColor #0073bb
+	EndColor #0073bb
+	DiamondBackgroundColor #eeeeee
+  	DiamondBorderColor #BEBEBE
+  	DiamondFontColor #4E5D6C
+}
+
+skinparam participant {
+			FontColor #FFF
+		BorderColor #EC7211
+		BackgroundColor #F18E3E-#EC7211
+	ParticipantBorderThickness 2
+}
+
+skinparam actor {
+			FontColor #FFF
+		BorderColor #EC7211
+		BackgroundColor #F18E3E-#EC7211
+	FontColor #4E5D6C
+}
+
+skinparam arrow {
+	Thickness 3
+	Color #EC7211
+	FontColor #4E5D6C
+}
+
+skinparam sequence {
+	ArrowThickness 3
+	BorderColor #EC7211
+	TitleFontColor #EC7211
+	BackgroundColor transparent
+	StartColor #EC7211
+	EndColor #EC7211
+	BoxBackgroundColor transparent
+	BoxBorderColor #4E5D6C
+	BoxFontColor #4E5D6C
+	DelayFontColor #4E5D6C
+	LifeLineBorderColor #abb6c2
+	LifeLineBorderThickness 2
+	LifeLineBackgroundColor #8191A3
+	GroupBorderColor #4E5D6C
+	GroupFontColor #4E5D6C
+	GroupHeaderFontColor #0073bb
+	GroupBackgroundColor #eeeeee
+	GroupBodyBackgroundColor transparent
+	GroupHeaderBackgroundColor transparent
+	DividerBackgroundColor #4E5D6C
+    DividerBorderColor #4E5D6C
+    DividerBorderThickness 2
+    DividerFontColor #abb6c2
+	ReferenceBackgroundColor transparent
+	ReferenceBorderColor #4E5D6C
+	ReferenceFontColor #4E5D6C
+	ReferenceHeaderFontColor #0073bb
+	ReferenceHeaderBackgroundColor #eeeeee
+	StereotypeFontColor #FFF
+	StereotypeFontSize 12
+}
+
+skinparam partition {
+	BorderColor #EC7211
+	FontColor #EC7211
+	BackgroundColor transparent
+}
+
+skinparam collections {
+			FontColor #FFF
+		BorderColor #EC7211
+		BackgroundColor #F18E3E-#EC7211
+}
+
+skinparam control {
+			FontColor #FFF
+		BorderColor #EC7211
+		BackgroundColor #F18E3E-#EC7211
+	FontColor #4E5D6C
+}
+
+skinparam entity {
+			FontColor #FFF
+		BorderColor #EC7211
+		BackgroundColor #F18E3E-#EC7211
+	FontColor #4E5D6C
+}
+
+skinparam boundary {
+			FontColor #FFF
+		BorderColor #EC7211
+		BackgroundColor #F18E3E-#EC7211
+	FontColor #4E5D6C
+}
+
+skinparam agent {
+	BackgroundColor #EC7211
+	BorderColor #F18E3E
+	FontColor #4E5D6C
+}
+
+skinparam note {
+	BorderThickness 1
+	BackgroundColor #0073bb
+	BorderColor #005C96
+	FontColor #FFF
+}
+
+skinparam artifact {
+	BackgroundColor #4E5D6C
+	BorderColor #3E4A56
+	FontColor #abb6c2
+}
+
+skinparam component {
+			FontColor #FFF
+		BorderColor #EC7211
+		BackgroundColor #F18E3E-#EC7211
+}
+
+skinparam interface {
+	BackgroundColor  #A7280E
+	BorderColor  #d13212
+	FontColor #4E5D6C
+}
+
+skinparam storage {
+	BackgroundColor #EC7211
+  	BorderColor #BD5B0E
+	FontColor #FFF
+}
+
+skinparam node {
+	BackgroundColor  transparent
+	BorderColor #abb6c2
+	FontColor #abb6c2
+}
+
+skinparam cloud {
+	BackgroundColor transparent
+	BorderColor #4E5D6C
+	FontColor #4E5D6C
+}
+
+skinparam database {
+			FontColor #FFF
+		BorderColor #EC7211
+		BackgroundColor #F18E3E-#EC7211
+	FontColor #4E5D6C
+	StereotypeFontColor #4E5D6C
+}
+
+skinparam class {
+			FontColor #FFF
+		BorderColor #EC7211
+		BackgroundColor #F18E3E-#EC7211
+	FontColor #FFF
+	HeaderBackgroundColor #F18E3E-#EC7211
+	StereotypeFontColor #4E5D6C
+	BorderThickness 1
+	AttributeFontColor #FFF
+	AttributeFontSize 11
+}
+
+skinparam object {
+			FontColor #FFF
+		BorderColor #EC7211
+		BackgroundColor #F18E3E-#EC7211
+	StereotypeFontColor #4E5D6C
+	BorderThickness 1
+	AttributeFontColor #FFF
+	AttributeFontSize 11
+}
+
+skinparam usecase {
+			FontColor #FFF
+		BorderColor #EC7211
+		BackgroundColor #F18E3E-#EC7211
+	BorderThickness 2
+	StereotypeFontColor #EC7211
+}
+
+skinparam rectangle {
+	BackgroundColor transparent
+	FontColor #4E5D6C
+	BorderColor #4E5D6C
+	BorderThickness 2
+	StereotypeFontColor #EC7211
+}
+
+skinparam package {
+	BackgroundColor transparent
+  	BorderColor #4E5D6C
+	FontColor #4E5D6C
+	BorderThickness 2
+}
+
+skinparam folder {
+	BackgroundColor #eeeeee
+  	BorderColor #EC7211
+	FontColor #EC7211
+	BorderThickness 2
+}
+
+skinparam frame {
+	BackgroundColor #eeeeee
+  	BorderColor #0073bb
+	FontColor #0073bb
+	BorderThickness 2
+}
+
+skinparam state {
+			FontColor #FFF
+		BorderColor #EC7211
+		BackgroundColor #F18E3E-#EC7211
+	StartColor #0073bb
+	EndColor #0073bb
+	AttributeFontColor #4E5D6C
+	AttributeFontSize 11
+}
+
+skinparam queue {
+			FontColor #FFF
+		BorderColor #EC7211
+		BackgroundColor #F18E3E-#EC7211
+}
+
+skinparam card {
+	BackgroundColor #0073bb
+	BorderColor #005C96
+	FontColor #FFF
+}
+
+skinparam file {
+	BackgroundColor #eeeeee
+	BorderColor #abb6c2
+	FontColor #4E5D6C
+}
+
+skinparam stack {
+			FontColor #FFF
+		BorderColor #EC7211
+		BackgroundColor #F18E3E-#EC7211
+}
+
+
+skinparam map {
+			FontColor #FFF
+		BorderColor #EC7211
+		BackgroundColor #F18E3E-#EC7211
+}
+
+<style>
+wbsDiagram, mindmapDiagram {
+  root {
+    BackgroundColor transparent
+    FontColor #FFF
+    HyperLinkColor #0073bb
+    LineColor #BD5B0E
+    LineThickness 1
+    Margin 10
+    Padding 6
+    Shadowing 0.0
+  }
+  node {
+    		FontColor #FFF
+		BorderColor #EC7211
+		BackgroundColor #F18E3E-#EC7211
+    Padding 15
+    RoundCorner 20
+  }
+  caption {
+    LineThickness 0
+  }
+  footer {
+    LineThickness 0
+  }
+  groupHeader {
+    BackgroundColor #eeeeee
+    FontColor #0073bb
+    FontStyle bold
+  }
+  header {
+    LineThickness 0
+  }
+  referenceHeader {
+    BackgroundColor transparent
+    FontColor #4E5D6C
+    FontStyle bold
+  }
+  separator {
+    BackgroundColor #4E5D6C
+    FontColor transparent
+    FontStyle bold
+  }
+  title {
+	FontSize 20
+	BorderRoundCorner            8
+	BorderThickness 	         1
+	BackgroundColor  ffffff-#eeeeee
+	FontColor #FFF
+	BorderColor #eeeeee
+  }
+}
+nwdiagDiagram {
+  network {
+    		FontColor #FFF
+		BorderColor #EC7211
+		BackgroundColor #F18E3E-#EC7211    
+    LineColor $PRIMARY_BG
+    LineThickness 1.0
+    FontColor #BD5B0E
+  }
+  server {
+    		FontColor #FFF
+		BorderColor #EC7211
+		BackgroundColor #F18E3E-#EC7211
+  }
+  arrow {
+    FontColor #BD5B0E
+    LineColor #BD5B0E
+  }
+  group {
+    BackGroundColor $LIGHT_BG
+    LineColor #8191A3
+    LineThickness 2.0
+    Margin 5
+    Padding 5
+  }
+}
+ganttDiagram {
+  task {
+    		FontColor #FFF
+		BorderColor #EC7211
+		BackgroundColor #F18E3E-#EC7211
+	LineColor $PRIMARY_BG
+    Margin 10
+    Padding 6
+  }
+  note {
+	FontColor #FFF
+	LineColor #005C96
+    BackGroundColor #0073bb
+  }
+  separator {
+	LineColor #eeeeee
+    BackGroundColor 		FontColor #4E5D6C
+		BorderColor #BEBEBE
+		BackgroundColor ffffff-#eeeeee
+    FontColor #4E5D6C
+  }
+  milestone {
+	FontColor #0073bb
+	FontSize 16
+	FontStyle italic
+	BackGroundColor $DIAMOND_BG
+	LineColor #BEBEBE
+  }
+  timeline {
+    BackgroundColor #eeeeee
+    FontColor #4E5D6C
+  }
+  closed {
+	BackgroundColor #BD5B0E
+	FontColor #FFF
+  }
+}
+</style>
+
+
+participant Main
+participant SharedList
+participant Benutzer
+participant Aufgabe
+
+title Sequenzdiagramm Remove User
+
+activate Main
+
+Main - -> SharedList : removeBenutzer(userID)
+activate SharedList
+
+SharedList - -> Benutzer : unlinkSharedList(listID)
+activate Benutzer
+Benutzer - -> Benutzer : remove(listID)
+
+Benutzer - -> Aufgabe : (automatically removed)
+activate Aufgabe
+Aufgabe - -> Benutzer : (Java garbage collector)
+deactivate Aufgabe
+
+Benutzer - -> SharedList
+deactivate Benutzer
+
+SharedList - -> SharedList : remove(userID)
+
+SharedList - -> Main
+deactivate SharedList
+
+@enduml
+
+PlantUML version 1.2022.7(Mon Aug 22 19:01:30 CEST 2022)
+(GPL source distribution)
+Java Runtime: Java(TM) SE Runtime Environment
+JVM: Java HotSpot(TM) 64-Bit Server VM
+Default Encoding: UTF-8
+Language: en
+Country: GB
+--></g></svg>

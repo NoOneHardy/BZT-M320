@@ -1,0 +1,33 @@
+@startuml
+!theme aws-orange
+
+participant Main
+participant SharedList
+participant Benutzer
+participant Aufgabe
+
+title Sequenzdiagramm Remove User
+
+activate Main
+
+Main --> SharedList : removeBenutzer(userID)
+activate SharedList
+
+SharedList --> Benutzer : unlinkSharedList(listID)
+activate Benutzer
+Benutzer --> Benutzer : remove(listID)
+
+Benutzer --> Aufgabe : (automatically removed)
+activate Aufgabe
+Aufgabe --> Benutzer : (Java garbage collector)
+deactivate Aufgabe
+
+Benutzer --> SharedList
+deactivate Benutzer
+
+SharedList --> SharedList : remove(userID)
+
+SharedList --> Main
+deactivate SharedList
+
+@enduml

@@ -1,0 +1,143 @@
+@startuml
+
+Main : <img:java.png{scale=0.3}>
+
+class Main {
+    + {static} main(args[]) : void
+}
+
+
+
+class Benutzer {
+    -- Attribute --
+    - id : int
+    - vorname : String
+    - nachname : String
+    - email : String
+    - passwort : String
+    - sharedToDoLists : HashMap<int id, SharedList sharedList>
+    - scanner : Scanner
+    - {static} userCounter : int
+
+    -- Konstruktoren --
+    + Benutzer() : void
+    + Benutzer(String vorname, String nachname, String email) : void
+
+    -- Getter und Setter --
+    - setId() : void
+    + getId() : int
+    + setVorname(String vorname) : void
+    + getVorname() : String
+    + setNachname(String nachname) : void
+    + getNachname() : String
+    + setEmail(String email) : void
+    + getEmail() : String
+    - setPasswort(String passwort) : void
+    
+    -- Methoden --
+    + enterPassword() : void
+    + isPasswordCorrect(String password) : boolean
+    + addSharedList(SharedList sharedList) : void
+    + addSharedList(int id) : void
+    + unlinkSharedList(int id) : void
+    + printOutBenutzer() : void
+    + printOutSharedLists() : void
+    + printOutSharedListsDetails() : void
+}
+
+class SharedList {
+    -- Attribute --
+    - id : int
+    - name : String
+    - beschreibung : String
+    - aufgaben : HashMap<int id, Aufgabe aufgabe>
+    - benutzer : HashMap<int id, Benutzer benutzer>
+    -{static} listCounter : int
+
+    -- Konstruktoren --
+    + SharedList() : void
+    + SharedList(String name, String beschreibung) : void
+
+    -- Getter und Setter --
+    - setId() : void
+    + getId() : int
+    + setName(String name) : void
+    + getName() : String
+    + setBeschreibung(String beschreibung) : void
+    + getBeschreibung() : String
+
+    -- Methoden --
+    + addAufgabe() : void
+    + addAufgabe(String name, String beschreibung, int prioritaet, Status status) : void
+    + addAufgabe(String name, String beschreibung, int prioritaet, Status status, Bild bild) : void
+    + removeAufgabe(int id) : void
+    + addBenutzer(Benutzer benutzer) : void
+    + removeBenutzer(int id) : void
+    + printAllTasks() : void
+    + printAllUsers() : void
+    + printOutSharedListFull() : void
+    + printOutSharedListUsers() : void
+}
+
+class Aufgabe {
+    -- Attribute --
+    - id : int
+    - name : String
+    - beschreibung : String
+    - prioritaet : int
+    - status : Enum
+    - bild : Bild
+    -{static} taskCounter : int
+
+    -- Konstruktoen --
+    + Aufgabe() : void
+    + Aufgabe(String name, String beschreibung, int prioritaet, Status status) : void
+    + Aufgabe(String name, String beschreibung, int prioritaet, Status status, Bild bild) : void
+
+    -- Getter und Setter --
+    - setId() : void
+    + getId() : int
+    + setName(String name) : void
+    + getName() : String
+    + setBeschreibung(String beschreibung) : void
+    + getBeschreibung() : String
+    + setPrioritaet(int prioritaet) : void
+    + getPrioritaet() : int
+    + setStatus(Enum status) : void
+    + getStatus() : Enum
+    + setBild(Bild bild) : void
+    + getBild() : Bild
+
+    -- Methoden --
+    + removeBild() : void
+    + printOutAufgabe() : void
+}
+
+class Bild {
+    -- Attribute --
+    - beschreibung : String
+    - pfad : String
+    - hoehe : int
+    - breite : int
+
+    -- Konstruktoren --
+    + Bild(String pfad, int breite, int hoehe) : void
+    + Bild(String pfad, int breite, int hoehe, String beschreibung) : void
+
+    -- Getter und Setter --
+    + setBeschreibung(String beschreibung) : void
+    + getBeschreibung() : String
+    + setPfad(String pfad) : void
+    + getPfad() : String
+    + setHoehe(int hoehe) : void
+    + getHoehe() : int
+    + setBreite(int breite) : void
+    + getBreite() : int
+}
+Main "1" <-- "1...n" Benutzer
+Main "1" <-- "1...n" SharedList
+Benutzer "1...4" <--> "0...2" SharedList
+SharedList "1" *-- "0...n" Aufgabe
+Aufgabe "1" *-- "1" Bild
+
+@enduml

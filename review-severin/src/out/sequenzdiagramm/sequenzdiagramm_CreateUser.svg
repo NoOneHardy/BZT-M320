@@ -1,0 +1,522 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" contentStyleType="text/css" height="1022.9167px" preserveAspectRatio="none" style="width:610px;height:1022px;background:#00000000;" version="1.1" viewBox="0 0 610 1022" width="610.4167px" zoomAndPan="magnify"><defs><linearGradient id="g1vm43q45hn3mn0" x1="50%" x2="50%" y1="0%" y2="100%"><stop offset="0%" stop-color="#F18E3E"/><stop offset="100%" stop-color="#EC7211"/></linearGradient></defs><g><rect fill="#8191A3" height="910.4818" style="stroke:#ABB6C2;stroke-width:1.0416666666666667;" width="10.4167" x="98.9583" y="57.3893"/><rect fill="#8191A3" height="910.4818" style="stroke:#ABB6C2;stroke-width:1.0416666666666667;" width="10.4167" x="340.625" y="57.3893"/><rect height="842.6758" rx="4.1667" ry="4.1667" style="stroke:#4E5D6C;stroke-width:1.5625;fill:none;" width="592.7083" x="10.4167" y="116.862"/><line style="stroke:#ABB6C2;stroke-width:0.5208333333333334;fill:none;stroke-dasharray:5.0,5.0;" x1="104.1667" x2="104.1667" y1="46.9727" y2="977.2461"/><line style="stroke:#ABB6C2;stroke-width:0.5208333333333334;fill:none;stroke-dasharray:5.0,5.0;" x1="345.8333" x2="345.8333" y1="93.8965" y2="977.2461"/><rect fill="url(#g1vm43q45hn3mn0)" height="40.7227" rx="4.1667" ry="4.1667" style="stroke:#EC7211;stroke-width:0.5208333333333334;" width="52.0833" x="78.125" y="5.2083"/><text fill="#FFFFFF" font-family="&quot;Verdana&quot;" font-size="12.5" lengthAdjust="spacing" textLength="27.0833" x="90.625" y="30.6844">Main</text><rect fill="url(#g1vm43q45hn3mn0)" height="40.7227" rx="4.1667" ry="4.1667" style="stroke:#EC7211;stroke-width:0.5208333333333334;" width="52.0833" x="78.125" y="976.2044"/><text fill="#FFFFFF" font-family="&quot;Verdana&quot;" font-size="12.5" lengthAdjust="spacing" textLength="27.0833" x="90.625" y="1001.6805">Main</text><rect fill="url(#g1vm43q45hn3mn0)" height="40.7227" rx="4.1667" ry="4.1667" style="stroke:#EC7211;stroke-width:0.5208333333333334;" width="120.8333" x="285.4167" y="976.2044"/><text fill="#FFFFFF" font-family="&quot;Verdana&quot;" font-size="12.5" lengthAdjust="spacing" textLength="95.8333" x="297.9167" y="1001.6805">Severin:Benutzer</text><rect fill="#8191A3" height="910.4818" style="stroke:#ABB6C2;stroke-width:1.0416666666666667;" width="10.4167" x="98.9583" y="57.3893"/><rect fill="#8191A3" height="910.4818" style="stroke:#ABB6C2;stroke-width:1.0416666666666667;" width="10.4167" x="340.625" y="57.3893"/><polygon fill="#EC7211" points="267.7083,85.612,278.125,89.7786,267.7083,93.9453,271.875,89.7786" style="stroke:#EC7211;stroke-width:1.0416666666666667;"/><line style="stroke:#EC7211;stroke-width:3.125;stroke-dasharray:2.0,2.0;" x1="109.375" x2="273.9583" y1="89.7786" y2="89.7786"/><text fill="#4E5D6C" font-family="&quot;Verdana&quot;" font-size="12.5" lengthAdjust="spacing" textLength="85.4167" x="121.875" y="79.7404">new Benutzer()</text><rect fill="url(#g1vm43q45hn3mn0)" height="40.7227" rx="4.1667" ry="4.1667" style="stroke:#EC7211;stroke-width:0.5208333333333334;" width="120.8333" x="285.4167" y="57.3893"/><text fill="#FFFFFF" font-family="&quot;Verdana&quot;" font-size="12.5" lengthAdjust="spacing" textLength="95.8333" x="297.9167" y="82.8654">Severin:Benutzer</text><path d="M14.5833,116.862 L82.2917,116.862 L82.2917,134.668 L71.875,145.0846 L10.4167,145.0846 L10.4167,121.0286 A4.1667,4.1667 0 0 1 14.5833,116.862 " fill="#EEEEEE" style="stroke:#4E5D6C;stroke-width:1.5625;"/><rect fill="none" height="842.6758" rx="4.1667" ry="4.1667" style="stroke:#4E5D6C;stroke-width:1.5625;" width="592.7083" x="10.4167" y="116.862"/><text fill="#0073BB" font-family="&quot;Verdana&quot;" font-size="12.5" font-weight="bold" lengthAdjust="spacing" textLength="14.5833" x="31.25" y="136.0881">alt</text><text fill="#4E5D6C" font-family="&quot;Verdana&quot;" font-size="12.5" font-weight="bold" lengthAdjust="spacing" textLength="126.0417" x="103.125" y="137.1297">[without Parameters]</text><line style="stroke:#EC7211;stroke-width:3.125;stroke-dasharray:2.0,2.0;" x1="351.0417" x2="394.7917" y1="192.2038" y2="192.2038"/><line style="stroke:#EC7211;stroke-width:3.125;stroke-dasharray:2.0,2.0;" x1="394.7917" x2="394.7917" y1="192.2038" y2="205.7454"/><line style="stroke:#EC7211;stroke-width:3.125;stroke-dasharray:2.0,2.0;" x1="352.0833" x2="394.7917" y1="205.7454" y2="205.7454"/><polygon fill="#EC7211" points="362.5,201.5788,352.0833,205.7454,362.5,209.9121,358.3333,205.7454" style="stroke:#EC7211;stroke-width:1.0416666666666667;"/><text fill="#4E5D6C" font-family="&quot;Verdana&quot;" font-size="12.5" lengthAdjust="spacing" textLength="38.5417" x="363.5417" y="182.1655">setID()</text><path d="M419.7917,164.974 L419.7917,208.724 A4.1667,4.1667 0 0 0 423.9583,212.8906 L578.125,212.8906 A4.1667,4.1667 0 0 0 582.2917,208.724 L582.2917,171.224 L571.875,160.8073 L423.9583,160.8073 A4.1667,4.1667 0 0 0 419.7917,164.974 " fill="#0073BB" style="stroke:#181818;stroke-width:1.0416666666666667;"/><path d="M571.875,160.8073 L571.875,169.1406 A2.0833,2.0833 0 0 0 573.9583,171.224 L582.2917,171.224 L571.875,160.8073 " fill="#0073BB" style="stroke:#181818;stroke-width:1.0416666666666667;"/><text fill="#FFFFFF" font-family="&quot;Verdana&quot;" font-size="12.5" lengthAdjust="spacing" textLength="112.5" x="431.25" y="184.2">Zugriff auf Statische</text><text fill="#FFFFFF" font-family="&quot;Verdana&quot;" font-size="12.5" lengthAdjust="spacing" textLength="130.2083" x="431.25" y="199.9227">Variabel "userCounter"</text><polygon fill="#EC7211" points="120.8333,246.5169,110.4167,250.6836,120.8333,254.8503,116.6667,250.6836" style="stroke:#EC7211;stroke-width:1.0416666666666667;"/><line style="stroke:#EC7211;stroke-width:3.125;stroke-dasharray:2.0,2.0;" x1="114.5833" x2="339.5833" y1="250.6836" y2="250.6836"/><text fill="#4E5D6C" font-family="&quot;Verdana&quot;" font-size="12.5" lengthAdjust="spacing" textLength="178.125" x="132.2917" y="240.6453">System.out.println("Vorname?")</text><polygon fill="#0073BB" points="36.4583,264.2253,170.8333,264.2253,181.25,280.8919,170.8333,298.6003,36.4583,298.6003,26.0417,280.8919,36.4583,264.2253" style="stroke:#181818;stroke-width:1.0416666666666667;"/><text fill="#FFFFFF" font-family="&quot;Verdana&quot;" font-size="12.5" lengthAdjust="spacing" textLength="119.7917" x="43.75" y="286.5763">Userinput "Vorname"</text><polygon fill="#EC7211" points="328.125,332.1289,338.5417,336.2956,328.125,340.4622,332.2917,336.2956" style="stroke:#EC7211;stroke-width:1.0416666666666667;"/><line style="stroke:#EC7211;stroke-width:3.125;stroke-dasharray:2.0,2.0;" x1="109.375" x2="334.375" y1="336.2956" y2="336.2956"/><text fill="#4E5D6C" font-family="&quot;Verdana&quot;" font-size="12.5" lengthAdjust="spacing" textLength="184.375" x="121.875" y="326.2573">setVorname(scanner.nextLine())</text><polygon fill="#EC7211" points="120.8333,372.8516,110.4167,377.0182,120.8333,381.1849,116.6667,377.0182" style="stroke:#EC7211;stroke-width:1.0416666666666667;"/><line style="stroke:#EC7211;stroke-width:3.125;stroke-dasharray:2.0,2.0;" x1="114.5833" x2="339.5833" y1="377.0182" y2="377.0182"/><text fill="#4E5D6C" font-family="&quot;Verdana&quot;" font-size="12.5" lengthAdjust="spacing" textLength="189.5833" x="132.2917" y="366.98">System.out.println("Nachname?")</text><polygon fill="#0073BB" points="31.25,390.5599,177.0833,390.5599,187.5,407.2266,177.0833,424.9349,31.25,424.9349,20.8333,407.2266,31.25,390.5599" style="stroke:#181818;stroke-width:1.0416666666666667;"/><text fill="#FFFFFF" font-family="&quot;Verdana&quot;" font-size="12.5" lengthAdjust="spacing" textLength="131.25" x="38.5417" y="412.911">Userinput "Nachname"</text><polygon fill="#EC7211" points="328.125,458.4635,338.5417,462.6302,328.125,466.7969,332.2917,462.6302" style="stroke:#EC7211;stroke-width:1.0416666666666667;"/><line style="stroke:#EC7211;stroke-width:3.125;stroke-dasharray:2.0,2.0;" x1="109.375" x2="334.375" y1="462.6302" y2="462.6302"/><text fill="#4E5D6C" font-family="&quot;Verdana&quot;" font-size="12.5" lengthAdjust="spacing" textLength="195.8333" x="121.875" y="452.592">setNachname(scanner.nextLine())</text><polygon fill="#EC7211" points="120.8333,499.1862,110.4167,503.3529,120.8333,507.5195,116.6667,503.3529" style="stroke:#EC7211;stroke-width:1.0416666666666667;"/><line style="stroke:#EC7211;stroke-width:3.125;stroke-dasharray:2.0,2.0;" x1="114.5833" x2="339.5833" y1="503.3529" y2="503.3529"/><text fill="#4E5D6C" font-family="&quot;Verdana&quot;" font-size="12.5" lengthAdjust="spacing" textLength="161.4583" x="132.2917" y="493.3146">System.out.println("E-Mail?")</text><polygon fill="#0073BB" points="44.7917,516.8945,162.5,516.8945,172.9167,533.5612,162.5,551.2695,44.7917,551.2695,34.375,533.5612,44.7917,516.8945" style="stroke:#181818;stroke-width:1.0416666666666667;"/><text fill="#FFFFFF" font-family="&quot;Verdana&quot;" font-size="12.5" lengthAdjust="spacing" textLength="103.125" x="52.0833" y="539.2456">Userinput "E-Mail"</text><polygon fill="#EC7211" points="328.125,584.7982,338.5417,588.9648,328.125,593.1315,332.2917,588.9648" style="stroke:#EC7211;stroke-width:1.0416666666666667;"/><line style="stroke:#EC7211;stroke-width:3.125;stroke-dasharray:2.0,2.0;" x1="109.375" x2="334.375" y1="588.9648" y2="588.9648"/><text fill="#4E5D6C" font-family="&quot;Verdana&quot;" font-size="12.5" lengthAdjust="spacing" textLength="165.625" x="121.875" y="578.9266">setEmail(scanner.nextLine())</text><line style="stroke:#EC7211;stroke-width:3.125;stroke-dasharray:2.0,2.0;" x1="351.0417" x2="394.7917" y1="629.6875" y2="629.6875"/><line style="stroke:#EC7211;stroke-width:3.125;stroke-dasharray:2.0,2.0;" x1="394.7917" x2="394.7917" y1="629.6875" y2="643.2292"/><line style="stroke:#EC7211;stroke-width:3.125;stroke-dasharray:2.0,2.0;" x1="352.0833" x2="394.7917" y1="643.2292" y2="643.2292"/><polygon fill="#EC7211" points="362.5,639.0625,352.0833,643.2292,362.5,647.3958,358.3333,643.2292" style="stroke:#EC7211;stroke-width:1.0416666666666667;"/><text fill="#4E5D6C" font-family="&quot;Verdana&quot;" font-size="12.5" lengthAdjust="spacing" textLength="91.6667" x="363.5417" y="619.6493">enterPasswort()</text><line style="stroke:#4E5D6C;stroke-width:1.0416666666666667;stroke-dasharray:2.0,2.0;" x1="10.4167" x2="603.125" y1="652.6042" y2="652.6042"/><text fill="#4E5D6C" font-family="&quot;Verdana&quot;" font-size="12.5" font-weight="bold" lengthAdjust="spacing" textLength="393.75" x="20.8333" y="670.7886">[with Parameters (String vorname, String nachname, String email)]</text><line style="stroke:#EC7211;stroke-width:3.125;stroke-dasharray:2.0,2.0;" x1="351.0417" x2="394.7917" y1="716.39" y2="716.39"/><line style="stroke:#EC7211;stroke-width:3.125;stroke-dasharray:2.0,2.0;" x1="394.7917" x2="394.7917" y1="716.39" y2="729.9316"/><line style="stroke:#EC7211;stroke-width:3.125;stroke-dasharray:2.0,2.0;" x1="352.0833" x2="394.7917" y1="729.9316" y2="729.9316"/><polygon fill="#EC7211" points="362.5,725.765,352.0833,729.9316,362.5,734.0983,358.3333,729.9316" style="stroke:#EC7211;stroke-width:1.0416666666666667;"/><text fill="#4E5D6C" font-family="&quot;Verdana&quot;" font-size="12.5" lengthAdjust="spacing" textLength="38.5417" x="363.5417" y="706.3517">setID()</text><path d="M419.7917,689.1602 L419.7917,732.9102 A4.1667,4.1667 0 0 0 423.9583,737.0768 L578.125,737.0768 A4.1667,4.1667 0 0 0 582.2917,732.9102 L582.2917,695.4102 L571.875,684.9935 L423.9583,684.9935 A4.1667,4.1667 0 0 0 419.7917,689.1602 " fill="#0073BB" style="stroke:#181818;stroke-width:1.0416666666666667;"/><path d="M571.875,684.9935 L571.875,693.3268 A2.0833,2.0833 0 0 0 573.9583,695.4102 L582.2917,695.4102 L571.875,684.9935 " fill="#0073BB" style="stroke:#181818;stroke-width:1.0416666666666667;"/><text fill="#FFFFFF" font-family="&quot;Verdana&quot;" font-size="12.5" lengthAdjust="spacing" textLength="112.5" x="431.25" y="708.3862">Zugriff auf Statische</text><text fill="#FFFFFF" font-family="&quot;Verdana&quot;" font-size="12.5" lengthAdjust="spacing" textLength="130.2083" x="431.25" y="724.1089">Variabel "userCounter"</text><line style="stroke:#EC7211;stroke-width:3.125;stroke-dasharray:2.0,2.0;" x1="351.0417" x2="394.7917" y1="774.8698" y2="774.8698"/><line style="stroke:#EC7211;stroke-width:3.125;stroke-dasharray:2.0,2.0;" x1="394.7917" x2="394.7917" y1="774.8698" y2="788.4115"/><line style="stroke:#EC7211;stroke-width:3.125;stroke-dasharray:2.0,2.0;" x1="352.0833" x2="394.7917" y1="788.4115" y2="788.4115"/><polygon fill="#EC7211" points="362.5,784.2448,352.0833,788.4115,362.5,792.5781,358.3333,788.4115" style="stroke:#EC7211;stroke-width:1.0416666666666667;"/><text fill="#4E5D6C" font-family="&quot;Verdana&quot;" font-size="12.5" lengthAdjust="spacing" textLength="128.125" x="363.5417" y="764.8315">setVorname(vorname)</text><line style="stroke:#EC7211;stroke-width:3.125;stroke-dasharray:2.0,2.0;" x1="351.0417" x2="394.7917" y1="829.1341" y2="829.1341"/><line style="stroke:#EC7211;stroke-width:3.125;stroke-dasharray:2.0,2.0;" x1="394.7917" x2="394.7917" y1="829.1341" y2="842.6758"/><line style="stroke:#EC7211;stroke-width:3.125;stroke-dasharray:2.0,2.0;" x1="352.0833" x2="394.7917" y1="842.6758" y2="842.6758"/><polygon fill="#EC7211" points="362.5,838.5091,352.0833,842.6758,362.5,846.8424,358.3333,842.6758" style="stroke:#EC7211;stroke-width:1.0416666666666667;"/><text fill="#4E5D6C" font-family="&quot;Verdana&quot;" font-size="12.5" lengthAdjust="spacing" textLength="151.0417" x="363.5417" y="819.0959">setNachname(nachname)</text><line style="stroke:#EC7211;stroke-width:3.125;stroke-dasharray:2.0,2.0;" x1="351.0417" x2="394.7917" y1="883.3984" y2="883.3984"/><line style="stroke:#EC7211;stroke-width:3.125;stroke-dasharray:2.0,2.0;" x1="394.7917" x2="394.7917" y1="883.3984" y2="896.9401"/><line style="stroke:#EC7211;stroke-width:3.125;stroke-dasharray:2.0,2.0;" x1="352.0833" x2="394.7917" y1="896.9401" y2="896.9401"/><polygon fill="#EC7211" points="362.5,892.7734,352.0833,896.9401,362.5,901.1068,358.3333,896.9401" style="stroke:#EC7211;stroke-width:1.0416666666666667;"/><text fill="#4E5D6C" font-family="&quot;Verdana&quot;" font-size="12.5" lengthAdjust="spacing" textLength="91.6667" x="363.5417" y="873.3602">setEmail(email)</text><line style="stroke:#EC7211;stroke-width:3.125;stroke-dasharray:2.0,2.0;" x1="351.0417" x2="394.7917" y1="937.6628" y2="937.6628"/><line style="stroke:#EC7211;stroke-width:3.125;stroke-dasharray:2.0,2.0;" x1="394.7917" x2="394.7917" y1="937.6628" y2="951.2044"/><line style="stroke:#EC7211;stroke-width:3.125;stroke-dasharray:2.0,2.0;" x1="352.0833" x2="394.7917" y1="951.2044" y2="951.2044"/><polygon fill="#EC7211" points="362.5,947.0378,352.0833,951.2044,362.5,955.3711,358.3333,951.2044" style="stroke:#EC7211;stroke-width:1.0416666666666667;"/><text fill="#4E5D6C" font-family="&quot;Verdana&quot;" font-size="12.5" lengthAdjust="spacing" textLength="117.7083" x="363.5417" y="927.6245">setPasswort("1234")</text><!--MD5=[88e6d8877a53b8b86ef7add016de8e3e]
+@startuml
+!theme aws-orange
+
+participant Main
+activate Main
+
+
+create "Severin:Benutzer" as severin
+activate severin
+Main - -> severin : new Benutzer()
+
+alt without Parameters
+severin - -> severin : setID()
+note right
+Zugriff auf Statische
+Variabel "userCounter"
+end note
+
+severin - -> Main : System.out.println("Vorname?")
+hnote over Main : Userinput "Vorname"
+Main - -> severin : setVorname(scanner.nextLine())
+severin - -> Main : System.out.println("Nachname?")
+hnote over Main : Userinput "Nachname"
+Main - -> severin : setNachname(scanner.nextLine())
+severin - -> Main : System.out.println("E-Mail?")
+hnote over Main : Userinput "E-Mail"
+Main - -> severin : setEmail(scanner.nextLine())
+
+severin - -> severin : enterPasswort()
+
+else with Parameters (String vorname, String nachname, String email)
+
+severin - -> severin : setID()
+note right
+Zugriff auf Statische
+Variabel "userCounter"
+end note
+
+severin - -> severin : setVorname(vorname)
+severin - -> severin : setNachname(nachname)
+severin - -> severin : setEmail(email)
+severin - -> severin : setPasswort("1234")
+
+end
+
+@enduml
+
+@startuml
+skinparam BackgroundColor transparent
+skinparam useBetaStyle false
+    !assume transparent light
+skinparam defaultFontName       "Verdana"
+skinparam defaultFontSize       12
+skinparam dpi                   100
+skinparam shadowing             false
+skinparam roundcorner           8
+skinparam ParticipantPadding    40
+skinparam BoxPadding            40
+skinparam Padding               5
+skinparam ArrowColor            #4E5D6C
+skinparam stereotype {
+    CBackgroundColor ffffff
+    CBorderColor #BEBEBE
+    ABackgroundColor #239B02
+    ABorderColor #176702
+    IBackgroundColor #EC4624
+    IBorderColor #A7280E
+    EBackgroundColor #F18E3E
+    EBorderColor #BD5B0E
+    NBackgroundColor #008AE0
+    NBorderColor #005C96
+}
+skinparam title {
+	FontSize	    	         20
+	BorderRoundCorner            8
+	BorderThickness 	         1
+	BackgroundColor  ffffff-#eeeeee
+	FontColor #EC7211
+	BorderColor #eeeeee
+}
+
+skinparam legend {
+    		FontColor #4E5D6C
+		BorderColor #BEBEBE
+		BackgroundColor ffffff-#eeeeee
+    BackgroundColor transparent
+}
+
+skinparam swimlane {
+	BorderColor #0073bb
+	BorderThickness 2
+	TitleBackgroundColor  ffffff-#eeeeee
+	TitleFontColor #EC7211
+}
+
+
+skinparam activity {
+			FontColor #FFF
+		BorderColor #EC7211
+		BackgroundColor #F18E3E-#EC7211
+	BarColor #1D8102
+	StartColor #0073bb
+	EndColor #0073bb
+	DiamondBackgroundColor #eeeeee
+  	DiamondBorderColor #BEBEBE
+  	DiamondFontColor #4E5D6C
+}
+
+skinparam participant {
+			FontColor #FFF
+		BorderColor #EC7211
+		BackgroundColor #F18E3E-#EC7211
+	ParticipantBorderThickness 2
+}
+
+skinparam actor {
+			FontColor #FFF
+		BorderColor #EC7211
+		BackgroundColor #F18E3E-#EC7211
+	FontColor #4E5D6C
+}
+
+skinparam arrow {
+	Thickness 3
+	Color #EC7211
+	FontColor #4E5D6C
+}
+
+skinparam sequence {
+	ArrowThickness 3
+	BorderColor #EC7211
+	TitleFontColor #EC7211
+	BackgroundColor transparent
+	StartColor #EC7211
+	EndColor #EC7211
+	BoxBackgroundColor transparent
+	BoxBorderColor #4E5D6C
+	BoxFontColor #4E5D6C
+	DelayFontColor #4E5D6C
+	LifeLineBorderColor #abb6c2
+	LifeLineBorderThickness 2
+	LifeLineBackgroundColor #8191A3
+	GroupBorderColor #4E5D6C
+	GroupFontColor #4E5D6C
+	GroupHeaderFontColor #0073bb
+	GroupBackgroundColor #eeeeee
+	GroupBodyBackgroundColor transparent
+	GroupHeaderBackgroundColor transparent
+	DividerBackgroundColor #4E5D6C
+    DividerBorderColor #4E5D6C
+    DividerBorderThickness 2
+    DividerFontColor #abb6c2
+	ReferenceBackgroundColor transparent
+	ReferenceBorderColor #4E5D6C
+	ReferenceFontColor #4E5D6C
+	ReferenceHeaderFontColor #0073bb
+	ReferenceHeaderBackgroundColor #eeeeee
+	StereotypeFontColor #FFF
+	StereotypeFontSize 12
+}
+
+skinparam partition {
+	BorderColor #EC7211
+	FontColor #EC7211
+	BackgroundColor transparent
+}
+
+skinparam collections {
+			FontColor #FFF
+		BorderColor #EC7211
+		BackgroundColor #F18E3E-#EC7211
+}
+
+skinparam control {
+			FontColor #FFF
+		BorderColor #EC7211
+		BackgroundColor #F18E3E-#EC7211
+	FontColor #4E5D6C
+}
+
+skinparam entity {
+			FontColor #FFF
+		BorderColor #EC7211
+		BackgroundColor #F18E3E-#EC7211
+	FontColor #4E5D6C
+}
+
+skinparam boundary {
+			FontColor #FFF
+		BorderColor #EC7211
+		BackgroundColor #F18E3E-#EC7211
+	FontColor #4E5D6C
+}
+
+skinparam agent {
+	BackgroundColor #EC7211
+	BorderColor #F18E3E
+	FontColor #4E5D6C
+}
+
+skinparam note {
+	BorderThickness 1
+	BackgroundColor #0073bb
+	BorderColor #005C96
+	FontColor #FFF
+}
+
+skinparam artifact {
+	BackgroundColor #4E5D6C
+	BorderColor #3E4A56
+	FontColor #abb6c2
+}
+
+skinparam component {
+			FontColor #FFF
+		BorderColor #EC7211
+		BackgroundColor #F18E3E-#EC7211
+}
+
+skinparam interface {
+	BackgroundColor  #A7280E
+	BorderColor  #d13212
+	FontColor #4E5D6C
+}
+
+skinparam storage {
+	BackgroundColor #EC7211
+  	BorderColor #BD5B0E
+	FontColor #FFF
+}
+
+skinparam node {
+	BackgroundColor  transparent
+	BorderColor #abb6c2
+	FontColor #abb6c2
+}
+
+skinparam cloud {
+	BackgroundColor transparent
+	BorderColor #4E5D6C
+	FontColor #4E5D6C
+}
+
+skinparam database {
+			FontColor #FFF
+		BorderColor #EC7211
+		BackgroundColor #F18E3E-#EC7211
+	FontColor #4E5D6C
+	StereotypeFontColor #4E5D6C
+}
+
+skinparam class {
+			FontColor #FFF
+		BorderColor #EC7211
+		BackgroundColor #F18E3E-#EC7211
+	FontColor #FFF
+	HeaderBackgroundColor #F18E3E-#EC7211
+	StereotypeFontColor #4E5D6C
+	BorderThickness 1
+	AttributeFontColor #FFF
+	AttributeFontSize 11
+}
+
+skinparam object {
+			FontColor #FFF
+		BorderColor #EC7211
+		BackgroundColor #F18E3E-#EC7211
+	StereotypeFontColor #4E5D6C
+	BorderThickness 1
+	AttributeFontColor #FFF
+	AttributeFontSize 11
+}
+
+skinparam usecase {
+			FontColor #FFF
+		BorderColor #EC7211
+		BackgroundColor #F18E3E-#EC7211
+	BorderThickness 2
+	StereotypeFontColor #EC7211
+}
+
+skinparam rectangle {
+	BackgroundColor transparent
+	FontColor #4E5D6C
+	BorderColor #4E5D6C
+	BorderThickness 2
+	StereotypeFontColor #EC7211
+}
+
+skinparam package {
+	BackgroundColor transparent
+  	BorderColor #4E5D6C
+	FontColor #4E5D6C
+	BorderThickness 2
+}
+
+skinparam folder {
+	BackgroundColor #eeeeee
+  	BorderColor #EC7211
+	FontColor #EC7211
+	BorderThickness 2
+}
+
+skinparam frame {
+	BackgroundColor #eeeeee
+  	BorderColor #0073bb
+	FontColor #0073bb
+	BorderThickness 2
+}
+
+skinparam state {
+			FontColor #FFF
+		BorderColor #EC7211
+		BackgroundColor #F18E3E-#EC7211
+	StartColor #0073bb
+	EndColor #0073bb
+	AttributeFontColor #4E5D6C
+	AttributeFontSize 11
+}
+
+skinparam queue {
+			FontColor #FFF
+		BorderColor #EC7211
+		BackgroundColor #F18E3E-#EC7211
+}
+
+skinparam card {
+	BackgroundColor #0073bb
+	BorderColor #005C96
+	FontColor #FFF
+}
+
+skinparam file {
+	BackgroundColor #eeeeee
+	BorderColor #abb6c2
+	FontColor #4E5D6C
+}
+
+skinparam stack {
+			FontColor #FFF
+		BorderColor #EC7211
+		BackgroundColor #F18E3E-#EC7211
+}
+
+
+skinparam map {
+			FontColor #FFF
+		BorderColor #EC7211
+		BackgroundColor #F18E3E-#EC7211
+}
+
+<style>
+wbsDiagram, mindmapDiagram {
+  root {
+    BackgroundColor transparent
+    FontColor #FFF
+    HyperLinkColor #0073bb
+    LineColor #BD5B0E
+    LineThickness 1
+    Margin 10
+    Padding 6
+    Shadowing 0.0
+  }
+  node {
+    		FontColor #FFF
+		BorderColor #EC7211
+		BackgroundColor #F18E3E-#EC7211
+    Padding 15
+    RoundCorner 20
+  }
+  caption {
+    LineThickness 0
+  }
+  footer {
+    LineThickness 0
+  }
+  groupHeader {
+    BackgroundColor #eeeeee
+    FontColor #0073bb
+    FontStyle bold
+  }
+  header {
+    LineThickness 0
+  }
+  referenceHeader {
+    BackgroundColor transparent
+    FontColor #4E5D6C
+    FontStyle bold
+  }
+  separator {
+    BackgroundColor #4E5D6C
+    FontColor transparent
+    FontStyle bold
+  }
+  title {
+	FontSize 20
+	BorderRoundCorner            8
+	BorderThickness 	         1
+	BackgroundColor  ffffff-#eeeeee
+	FontColor #FFF
+	BorderColor #eeeeee
+  }
+}
+nwdiagDiagram {
+  network {
+    		FontColor #FFF
+		BorderColor #EC7211
+		BackgroundColor #F18E3E-#EC7211    
+    LineColor $PRIMARY_BG
+    LineThickness 1.0
+    FontColor #BD5B0E
+  }
+  server {
+    		FontColor #FFF
+		BorderColor #EC7211
+		BackgroundColor #F18E3E-#EC7211
+  }
+  arrow {
+    FontColor #BD5B0E
+    LineColor #BD5B0E
+  }
+  group {
+    BackGroundColor $LIGHT_BG
+    LineColor #8191A3
+    LineThickness 2.0
+    Margin 5
+    Padding 5
+  }
+}
+ganttDiagram {
+  task {
+    		FontColor #FFF
+		BorderColor #EC7211
+		BackgroundColor #F18E3E-#EC7211
+	LineColor $PRIMARY_BG
+    Margin 10
+    Padding 6
+  }
+  note {
+	FontColor #FFF
+	LineColor #005C96
+    BackGroundColor #0073bb
+  }
+  separator {
+	LineColor #eeeeee
+    BackGroundColor 		FontColor #4E5D6C
+		BorderColor #BEBEBE
+		BackgroundColor ffffff-#eeeeee
+    FontColor #4E5D6C
+  }
+  milestone {
+	FontColor #0073bb
+	FontSize 16
+	FontStyle italic
+	BackGroundColor $DIAMOND_BG
+	LineColor #BEBEBE
+  }
+  timeline {
+    BackgroundColor #eeeeee
+    FontColor #4E5D6C
+  }
+  closed {
+	BackgroundColor #BD5B0E
+	FontColor #FFF
+  }
+}
+</style>
+
+
+participant Main
+activate Main
+
+
+create "Severin:Benutzer" as severin
+activate severin
+Main - -> severin : new Benutzer()
+
+alt without Parameters
+severin - -> severin : setID()
+note right
+Zugriff auf Statische
+Variabel "userCounter"
+end note
+
+severin - -> Main : System.out.println("Vorname?")
+hnote over Main : Userinput "Vorname"
+Main - -> severin : setVorname(scanner.nextLine())
+severin - -> Main : System.out.println("Nachname?")
+hnote over Main : Userinput "Nachname"
+Main - -> severin : setNachname(scanner.nextLine())
+severin - -> Main : System.out.println("E-Mail?")
+hnote over Main : Userinput "E-Mail"
+Main - -> severin : setEmail(scanner.nextLine())
+
+severin - -> severin : enterPasswort()
+
+else with Parameters (String vorname, String nachname, String email)
+
+severin - -> severin : setID()
+note right
+Zugriff auf Statische
+Variabel "userCounter"
+end note
+
+severin - -> severin : setVorname(vorname)
+severin - -> severin : setNachname(nachname)
+severin - -> severin : setEmail(email)
+severin - -> severin : setPasswort("1234")
+
+end
+
+@enduml
+
+PlantUML version 1.2022.7(Mon Aug 22 19:01:30 CEST 2022)
+(GPL source distribution)
+Java Runtime: Java(TM) SE Runtime Environment
+JVM: Java HotSpot(TM) 64-Bit Server VM
+Default Encoding: UTF-8
+Language: en
+Country: GB
+--></g></svg>

@@ -1,0 +1,46 @@
+@startuml
+!theme aws-orange
+
+participant Main
+activate Main
+
+
+create "Severin:Benutzer" as severin
+activate severin
+Main --> severin : new Benutzer()
+
+alt without Parameters
+severin --> severin : setID()
+note right
+Zugriff auf Statische
+Variabel "userCounter"
+end note
+
+severin --> Main : System.out.println("Vorname?")
+hnote over Main : Userinput "Vorname"
+Main --> severin : setVorname(scanner.nextLine())
+severin --> Main : System.out.println("Nachname?")
+hnote over Main : Userinput "Nachname"
+Main --> severin : setNachname(scanner.nextLine())
+severin --> Main : System.out.println("E-Mail?")
+hnote over Main : Userinput "E-Mail"
+Main --> severin : setEmail(scanner.nextLine())
+
+severin --> severin : enterPasswort()
+
+else with Parameters (String vorname, String nachname, String email)
+
+severin --> severin : setID()
+note right
+Zugriff auf Statische
+Variabel "userCounter"
+end note
+
+severin --> severin : setVorname(vorname)
+severin --> severin : setNachname(nachname)
+severin --> severin : setEmail(email)
+severin --> severin : setPasswort("1234")
+
+end
+
+@enduml
