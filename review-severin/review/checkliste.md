@@ -2,19 +2,19 @@
 
 ## Übersicht
 
-| Checklist Item                                    | Erklärung                                                                                | Status  |
-|---------------------------------------------------|------------------------------------------------------------------------------------------|---------|
-| Use Intention-Revealing Names                     | Namen (Klassen, Funktionen, Variablen) sollen den Verwendungszweck abbilden              | Pending |
-| Use Solution/Problem Domain Names                 | Namen (Klassen, Funktionen, Variablen) sollen der Aufgabenstellung gemäss genutzt werden | Pending |
-| Klassen gross                                     | Klassen sind gross geschrieben                                                           | Pending |
-| Functions should be small!                        | Methoden sind klein geschrieben                                                          | Pending |
-| Do one Thing                                      | Eine Methode soll genau eine Aufgabe erfüllen                                            | Pending |
-| Don't Repeat Yourself (Avoid Duplication)         | Keine Repetition im Source-Code                                                          | Pending |
-| Explain yourself in code                          | Kommentar im Source-Code!                                                                | Pending |
-| Make sure the code formatting is applied          | Code soll formatiert sein                                                                | Pending |
-| Don't return Null                                 | Achten Sie darauf, dass nie/wenn möglich `null` zurückgegeben wird                       | Pending |
-| Avoid duplication of code                         | Kein duplizierter Code                                                                   | Pending |
-| Minimize the accessibility of classes and members | Zugriffsmodifizierer sind angewendet                                                     | Pending |
+| Checklist Item                                    | Erklärung                                                                                | Status |
+|---------------------------------------------------|------------------------------------------------------------------------------------------|--------|
+| Use Intention-Revealing Names                     | Namen (Klassen, Funktionen, Variablen) sollen den Verwendungszweck abbilden              | Ok     |
+| Use Solution/Problem Domain Names                 | Namen (Klassen, Funktionen, Variablen) sollen der Aufgabenstellung gemäss genutzt werden | Ok     |
+| Klassen gross                                     | Klassen sind gross geschrieben                                                           | Ok     |
+| Functions should be small!                        | Methoden sind klein geschrieben                                                          | Ok     |
+| Do one Thing                                      | Eine Methode soll genau eine Aufgabe erfüllen                                            | Ok     |
+| Don't Repeat Yourself (Avoid Duplication)         | Keine Repetition im Source-Code                                                          | Ok     |
+| Explain yourself in code                          | Kommentar im Source-Code!                                                                | Ok     |
+| Make sure the code formatting is applied          | Code soll formatiert sein                                                                | Ok     |
+| Don't return Null                                 | Achten Sie darauf, dass nie/wenn möglich `null` zurückgegeben wird                       | Ok     |
+| Avoid duplication of code                         | Kein duplizierter Code                                                                   | Ok     |
+| Minimize the accessibility of classes and members | Zugriffsmodifizierer sind angewendet                                                     | Ok     |
 
 ## Konventionen
 
@@ -22,13 +22,13 @@
 
 Namen (Klassen, Funktionen, Variablen) sollen den Verwendungszweck abbilden
 
-| Filename        | Kommentar | Status |
-|-----------------|-----------|--------|
-| Aufgabe.java    | -         | Ok     |
-| Benutzer.java   | -         | Ok     |
-| Bild.java       | -         | Ok     |
-| Main.java       | -         | Ok     |
-| SharedList.java | -         | Ok     |
+| Filename        | Kommentar                                  | Status |
+|-----------------|--------------------------------------------|--------|
+| Aufgabe.java    | -                                          | Ok     |
+| Benutzer.java   | enterPassword() kann missverstanden werden | Ok     |
+| Bild.java       | -                                          | Ok     |
+| Main.java       | -                                          | Ok     |
+| SharedList.java | -                                          | Ok     |
 
 
 ### Use Solution/Problem Domain Names
@@ -71,25 +71,25 @@ Methoden sind klein geschrieben
 
 Eine Methode soll genau eine Aufgabe erfüllen
 
-| Filename        | Kommentar                                                                                            | Status |
-|-----------------|------------------------------------------------------------------------------------------------------|--------|
-| Aufgabe.java    | -                                                                                                    | Ok     |
-| Benutzer.java   | Die Methode ```isPasswordCorrect``` hätte in der Methode ```enterPassword``` verwendet werden können | Ok     |
-| Bild.java       | -                                                                                                    | Ok     |
-| Main.java       | -                                                                                                    | Ok     |
-| SharedList.java | -                                                                                                    | Ok     |
+| Filename        | Kommentar | Status |
+|-----------------|-----------|--------|
+| Aufgabe.java    | -         | Ok     |
+| Benutzer.java   | -         | Ok     |
+| Bild.java       | -         | Ok     |
+| Main.java       | -         | Ok     |
+| SharedList.java | -         | Ok     |
 
 ### Don't Repeat Yourself (Avoid Duplication)
 
 Keine Repetition im Source-Code
 
-| Filename        | Kommentar                                                                                                                        | Status |
-|-----------------|----------------------------------------------------------------------------------------------------------------------------------|--------|
-| Aufgabe.java    | Konstruktoren hätten mit ```this()``` überladen werden können                                                                    | Ok     |
-| Benutzer.java   | Die Prüfung ob das Passwort korrekt ist, wird in beiden Methoden ```isPasswordCorrect``` und ```enterPassword``` ausprogrammiert | Ok     |
-| Bild.java       | Konstruktoren hätten mit ```this()``` überladen werden können                                                                    | Ok     |
-| Main.java       | -                                                                                                                                | Ok     |
-| SharedList.java | Konstruktoren hätten mit ```this()``` überladen werden können                                                                    | Ok     |
+| Filename        | Kommentar                                                     | Status |
+|-----------------|---------------------------------------------------------------|--------|
+| Aufgabe.java    | Konstruktoren hätten mit ```this()``` überladen werden können | Ok     |
+| Benutzer.java   | -                                                             | Ok     |
+| Bild.java       | Konstruktoren hätten mit ```this()``` überladen werden können | Ok     |
+| Main.java       | -                                                             | Ok     |
+| SharedList.java | Konstruktoren hätten mit ```this()``` überladen werden können | Ok     |
 
 ### Explain yourself in code
 
@@ -143,7 +143,7 @@ Zugriffsmodifizierer sind angewendet
 
 ### Wie habe ich mich beim Codereview gefühlt?
 
-Gut?
+Gut, Severin war sehr freundlich und respektvoll.
 
 ### Was habe ich gelernt (im Vorgehen)?
 
@@ -151,3 +151,5 @@ Gut?
 * Für ein Codereview sollten im voraus "Lernziele" besprochen werden
 
 ### Was habe ich gelernt (technisch)?
+
+Ich sollte mehr Inline-Kommentare schreiben.

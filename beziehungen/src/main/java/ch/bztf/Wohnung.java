@@ -228,33 +228,46 @@ public class Wohnung {
      * @return Die Moebel, die aus dem Zimmer entfernt wurden
      */
     public ArrayList<Moebel> zimmerUmbauen(int index, String typ, ArrayList<Moebel> moebelListe) {
+        // Wert wenn negativ invertieren
         if (index < 0) index *= -1;
+        // Prüfen ob das Zimmer existiert
         if (index > getAnzahlZimmer()) {
             System.out.println("Die Wohnung " + getAdresse() + " hat nur " + getAnzahlZimmer() + " Zimmer.");
             System.out.println("Der angegebene Index " + index + " ist zu hoch.");
             System.out.println("Der Umbau wird nicht durchgefuehrt.");
             return new ArrayList<>();
         }
+        // Typ formatieren
         typ = typ.substring(0, 1).toUpperCase() + typ.substring(1);
+        // Altes Zimmer abrufen
         Zimmer altesZimmer = getZimmerListe().get(index);
+        // Prüfen ob das Zimmer bereits von diesem Typ ist
         if (altesZimmer.getTyp().equals(typ)) {
             System.out.println("Dieses Zimmer ist bereits ein " + typ);
-            return null;
+            return new ArrayList<>();
         }
 
+        // Neues Zimmer initialisieren
         Zimmer neuesZimmer;
+        // ArrayList mit den neuen Möbeln erstellen
         ArrayList<Moebel> sonstigeMoebel = new ArrayList<>(moebelListe);
-
+        // ArrayList mit den alten Möbeln erstellen
         final ArrayList<Moebel> alteMoebel = altesZimmer.leeren();
         switch (typ) {
+            // Das Zimmer wird ein Schlafzimmer
             case "Schlafzimmer":
+                // ArrayList für Betten erstellen
                 ArrayList<Bett> betten = new ArrayList<>();
+                // Alle Möbel ins Zimmer stellen
                 for (Moebel moebel : moebelListe) {
+                    // Das Möbel ist ein Bett
                     if (moebel.getClass().equals(Bett.class)) {
+                        // Bett ins Betten Array hinzufügen
                         betten.add((Bett) moebel);
                         sonstigeMoebel.remove(moebel);
                     }
                 }
+                // Zimmer zu einem Schlafzimmer machen
                 neuesZimmer = new Schlafzimmer(betten);
                 break;
             case "Badezimmer":
