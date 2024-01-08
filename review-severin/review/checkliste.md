@@ -143,7 +143,8 @@ Zugriffsmodifizierer sind angewendet
 
 ### Wie habe ich mich beim Codereview gefühlt?
 
-Gut, Severin war sehr freundlich und respektvoll.
+Gut, Severin war sehr freundlich und respektvoll.  
+Ich habe sehr gut formuliertes konstruktives Feedback erhalten.
 
 ### Was habe ich gelernt (im Vorgehen)?
 
